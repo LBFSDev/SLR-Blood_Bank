@@ -1,0 +1,19 @@
+
+Abstract (2021)
+Blood supply chain (BSC) management represents a vital and challenging task; blood is essentially needed, 
+and in cases it is not available, patients may face death or other serious consequences. 
+The BSC involves numerous complicated factors such as uncertainties in blood supply/demand, blood type 
+distribution, limitations associated with blood shelf life, and production and collection methods. 
+Given these issues, researchers have focused on developing efficient methodologies that could strike a balance 
+between blood supply and demand, while minimizing blood shortage/waste. Review studies could help to highlight 
+the findings and trends in this research area. The purpose of this study was to provide a systematic literature 
+review of research on the BSC, using a bibliometric method. Such an approach was not previously used in the 
+literature. Identifying and analyzing the impacts of the existing publications, the study could help 
+researchers and institutions interested in this field to recognize hot topics and research trends. 
+In doing so, the study investigated the articles published in journals indexed on Web of Science (WoS) 
+between 1990 and August 2021, by considering three keyword echelons. As such, 485 articles were found and 
+systematically analyzed. The study used content analysis software to compute author influence and affiliation 
+statistics, while conducting citation analysis, co-citation analysis, keyword analysis, and co-word analysis. 
+Furthermore, through co-word analysis and keyword co-occurrence analysis, the hot topics in research on the 
+BSC were identified. The study also specifically investigated the supply chain of red blood cells, although 
+it did not separately explore other blood by-products.

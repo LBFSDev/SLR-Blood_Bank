@@ -1,0 +1,21 @@
+Abstract
+Introduction
+Revision hip surgery is well documented to have a high association with substantial blood loss and the associated
+ need for a blood transfusion. This exposes the patient to increased risk of transfusion reaction and blood 
+borne infection. There are many strategies to minimize allogeneic transfusion rates in revision surgery such 
+as pre-operative autologous donation, peri-operative tranexamic acid, thrombin sealants, normovolaemic 
+haemodilution, intra-operative blood salvage and the use of post-operative autologous drains.
+
+Patients and methods
+We prospectively looked at 177 consecutive cases performed at one centre by a single surgical and anaesthetic 
+team to identify which patient and operative factors were most significant in minimizing the requirement for 
+an allogeneic blood transfusion.
+
+Results
+Our results identified the duration of surgery as being the only significant variable affecting the level of 
+blood loss. We noted a 3% increase in the probability of massive blood loss (> 2000 mls) for every minute of 
+increased surgical time in our series.
+
+Conclusions
+We conclude that measures to minimize the duration of surgery would be beneficial in reducing blood loss and 
+the risks of requiring blood transfusions in revision hip surgery.

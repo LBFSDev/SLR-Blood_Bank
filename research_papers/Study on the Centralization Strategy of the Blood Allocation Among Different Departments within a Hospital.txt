@@ -1,0 +1,15 @@
+Abstract
+By far, the researches on how to distribute blood products among different departments in hospital have not 
+been further studied, though the problem of blood shortage and wastage that caused by improper blood allocation
+ is severe, which may endanger patient’s lives and impose considerable costs on hospitals. In order to solve 
+this problem, this paper mainly studies on how to distribute the blood items among different departments within
+ a hospital and investigates the allocation approach with the novel management method by centralizing the 
+inventory of several different departments. By integrating the blood inventory requirements of some departments,
+ the hospital could reduce the rate of blood shortage and wastage effectively, release the pressure of the 
+occupancy of resources and reduce the bullwhip effect of blood products. This paper illustrates the 
+centralization principle in hospital and formulates the mixed integer programming model to work out the 
+optimal allocation network scheme and the optimal inventory setting for every department. And the results of 
+the numerical example demonstrate that this centralization method could considerably reduce blood shortage and 
+wastage in hospital by about 72% and 90% respectively. Furthermore, it could decrease the total cost by about 
+108,540 RMB a month on blood supply chain management in the hospital and improve the effect of some certain 
+surgeries by transfusing the fresh blood to patients.

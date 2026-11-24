@@ -1,0 +1,17 @@
+Abstract
+In recent years, attention to blood supply chain in disaster circumstances has significantly increased. 
+Disasters, especially earthquakes, have adverse consequences such as destruction, loss of human lives, and 
+undermining the effectiveness of health services. This research considers a six-echelon blood supply chain 
+which consists of donors, blood collection centers (permanent and temporary), regional blood centers, local 
+blood centers, regional hospitals, and local hospitals. For the first time, we considered that helicopters 
+could carry blood from regional hospitals to local hospitals and return injured people that cannot be treated 
+in local hospitals to regional hospitals due to the limited capacity. In addition to the above, different 
+transportations with limited capacities regarded, where the optimal number of required transportations 
+equipment determined after the solution process. This research aims to avoid the worst consequences of a 
+disaster using a neural-learning process to gain from past experiences to meet new challenges. For this aim, 
+this article considers three objective functions that are minimizing total transportation time and cost while 
+minimizing unfulfilled demand. The model implemented based on a real-world case study from the most recent 
+earthquake in the Iran–Iraq border which named the deadliest earthquake of 2017. Based on our results, we 
+learned how to design an efficient blood supply chain that can fulfill hospitals blood demand quickly with 
+the lowest cost using simulation and optimization processes. Moreover, we performed in-depth analyses and 
+provided essential managerial insights at last.

@@ -1,0 +1,18 @@
+Abstract
+There exists a large number of web-based blood management systems for blood donation-related purposes.
+ Upon critical review, it appears that most of them are very limited in their application and user-base. 
+It becomes extremely difficult to collect blood on short notice during urgent critical cases. Hence it is 
+the dire need of the patient party during such ad-hoc requirements to expect help from anybody and everybody. 
+We explore the omnipresent smart mobile devices with GPS to bring prospective donors to the patient-in-need by 
+defining the framework of a location-aware blood management system. The proposed system, implemented as an 
+Android application, enables donor registration, authentication, and geo-location–based matching within a 
+configurable travel radius. It also integrates camp scheduling, donor slot booking, agency management, and
+ workflow-based approval features. The system augments a previously proposed data-warehouse-centric blood 
+management ecosystem and extends its functionalities to mobile devices. The objective of this study is to 
+identify limitations in the prevailing apps and design different location-aware use cases with basic facilities 
+to register, authenticate, and find/ recommend donors within a certain (quickly commutable) periphery of the
+ patient location. The system will recommend a list of available donors based on chosen criteria and 
+travel-distance. Another location-aware use-case for blood donation campaign management services has been 
+incorporated into the framework where donor registration, area-wise campaign planning, camping agency management,
+ etc are augmented. In future, using the generated camping data, it would be possible to profile donors as 
+per location and demography to ease various AI based decisions.

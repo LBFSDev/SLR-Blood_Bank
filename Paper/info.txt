@@ -1,0 +1,87 @@
+Title: Decentralized and Innovative Resource Mobilization Strategies for Healthcare Resilience During Crises: A Systematic Literature Review.
+
+
+
+RQ1- What decentralized and innovative blood resource mobilization strategies have been implemented to support 
+healthcare systems during crises?
+
+RQ2- How can regional blood-group distribution data be integrated into decentralized blood resource mobilization
+strategies?
+
+RQ3- How can regional blood-group data support the identification and mobilization of suitable blood donors 
+during emergencies?
+
+RQ4- What role can data-driven approaches play in matching regional blood supply with emergency blood demand 
+across different blood groups?
+
+RQ5- What operational, logistical, ethical, and data-related challenges affect the implementation of these 
+strategies?
+
+
+--------------------
+(Selection Criteria):
+
+-Examine blood donation, blood collection, blood inventory, blood supply, blood distribution, transfusion services, 
+or blood-resource mobilization.
+
+-Publications were required to address crises, disasters,resilience, robustness or disruptions 
+affecting blood donation services.
+
+-Only peer-reviewed articles published in English between 2020 and 2026 were included. 
+
+-Investigate distributed or community-based approaches, such as Walking Blood Banks, emergency donor networks, mobile blood collection,
+regional donor registries, or cooperation between blood banks.
+
+-Examine new or adapted operational, organizational, technological, or logistical approaches to mobilizing blood resources.
+
+-Investigate statistical models, optimization, forecasting, geographic information systems (GIS), artificial intelligence, machine learning,
+or decision-support systems for blood supply and demand.
+
+
+-include a paper if
+
+1. It satisfies the mandatory publication and relevance requirements.
+2. It provides meaningful evidence for at least one research question.
+3. It contains enough information for data extraction.
+
+
+SLR Assumption: 
+Studies were selected based on predefined inclusion and exclusion criteria. Not all inclusion criteria were 
+required to be simultaneously satisfied, as the review addresses multiple interconnected research questions.
+Studies were considered eligible if they met the mandatory publication and relevance requirements and contributed
+meaningful evidence to at least one research question. Depending on their focus, studies could address 
+decentralized blood-resource mobilization, regional blood-group distribution, donor identification and 
+mobilization, data-driven blood supply and demand matching, or implementation challenges. Foundational 
+studies addressing blood-group distributions and donor characteristics were also considered, even when 
+they did not explicitly examine crisis situations, provided that their findings were relevant to the 
+development of emergency blood-resource mobilization strategies.
+
+
+------------
+KEYWORDS:
+(blood donation services, blood supply, crisis management, disaster preparedness, operational
+practices, systematic review , blood group distribution,blood group prevalence ,regional blood group distribution,
+Geographic blood group distribution ,rare blood groups,regional donor database,	decentralized,resource mobilization
+rare donor identification,emergency donor identification)
+
+
+-------------------
+Dimensions : 
+
+-Deductive Reasoning (initial dimensions using existing frameworks) : 
+
+1-ISBT Operational Recommendations Framework.
+2-ISBT Blood Supply Management resources.
+3-ISBT Donors and Donation resources.
+4-ISBT Rare Donor Programme resources.
+5-ISBT Blood Group Classification and Terminology.
+
+-Inductive Reasoning (collected research papers concepts/characteristics called attributes are classified to initial dimensions)
+
+
+-previous SLR Dimensions & Dimensions concluded during data extraction and analysis
+
+=> Final Taxonomy = All dimensions & attributes
+--------------------
+Results: 
+-Final results that answers the SLR questions 

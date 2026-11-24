@@ -1,0 +1,8 @@
+The aphorism “Blood Is Life” is likely truer nowhere than within the confines of the operating room.
+ While blood transfusion finally became a life-saving reality in the twentieth century, thereby vastly 
+expanding the range of survivable operations and injuries, it still remains an imperfect science, with 
+both overt and non-overt risks and consequences. Potential safety issues regarding blood transfusion in the
+ operating room range from risks posed by blood products directly and physiological alterations resulting from
+ transfusion to the uncertainties that surround transfusion strategies and blood product selection. In this 
+chapter, we will describe the most common safety concerns and measures of mitigation that pertain to blood 
+transfusion in the surgical patient.

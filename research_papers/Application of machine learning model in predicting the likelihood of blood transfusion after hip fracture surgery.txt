@@ -1,0 +1,49 @@
+Abstract
+Objective
+Anemia is one of the common adverse reactions after hip fracture surgery. The traditional method to solve 
+anemia is allogeneic transfusion. However, the transfusion may lead to some complications such as septicemia 
+and fever. So far, few studies have reported roles of machine learning in predicting whether blood transfusion
+ is needed or not after hip fracture surgery. Therefore, the purpose of this study is to develop 
+machine learning models to predict the likelihood of postoperative blood transfusion in patients undergoing 
+hip fracture surgery.
+
+Methods
+This study enrolled 1355 patients who underwent hip fracture surgery at the Affiliated Hospital of Qingdao 
+University from January 2016 to December 2021. Among all patients, 210 cases received postoperative blood 
+transfusion. All patients were randomly divided into a training group and a testing group at a ratio of 7:3. 
+In the training group, univariate and multivariate logistic regression analyses were used to determine 
+independent risk factors for the postoperative transfusion. Then, based on these independent risk factors, 
+tenfold cross-validation method was utilized to develop five machine learning models, including logistic,
+ multilayer perceptron (MLP), extreme gradient boosting (XGBoost), random forest (RF), and support vector 
+machine (SVM). The receiver operating characteristic (ROC) curve, area under ROC curve (AUC), and Matthews 
+correlation coefficient (MCC) were generated to evaluate the performance of the models. Calibration plot and 
+decision curve analysis (DCA) were used to test the performance, stability, and clinical applicability of the
+ models. The models were validated using the testing group; and the ROC curve, MCC, calibration plot, and DCA 
+curves were also generated to validate the performance, stability, and clinical applicability of the models.
+ To further verify the robustness of the model, we randomly grabbed 70% of the samples in the testing set, 
+performed 1000 iterations, and calculated the AUC and confidence interval of the five models. Finally, we used 
+SHapley Additive exPlanations (SHAP) to explain these models.
+
+Results
+Multivariate logistic regression analysis showed that there were 8 independent risk factors, including age, 
+blood transfusion history, albumin (ALB), globulin (GLO), total bilirubin (TBIL), indirect bilirubin (IBIL), 
+hemoglobin (HB), and blood loss > 200 ml. We finally selected five independent risk factors including HB, GLO, 
+age, IBIL, and blood loss > 200 ml. Based on these five independent risk factors, we generated six characteristic
+ variables, namely HB, HB × HB, HB × blood loss, GLO × HB, age, age × IBIL, and established five machine 
+learning models using a tenfold cross-validation method. In the training group, the AUC values of logistic, 
+RF, MLP, SVM, and XGB were 0.9320, 0.8911, 0.9327, 0.9225, and 0.8825, respectively, and the average AUC was
+ 0.9122 ± 0.0212. The MCC values were 0.65, 0.77, 0.65, 0.66, and 0.68, respectively, and the calibration plot
+ and DCA performed well. In the testing group the AUC values of logistic, RF, MLP, SVM, and XGB were 0.8483,
+ 0.7978, 0.8576, 0.8598, and 0.8216, respectively. The average AUC was 0.8370 ± 0.0238, and the MCC values were
+ 0.41, 0.35, 0.40, 0.41, and 0.41, respectively. The calibration plot and DCA in the testing group also showed
+ good performance. The AUC values and confidence intervals of the 1000-iteration model were: logistic 
+(AUC, min confidence interval [CI]–max confidence interval [CI] 0.848, 0.804–0.903), RF (AUC, minCI–maxCI 0.797, 
+0.734–0.857), MLP (AUC, minCI–maxCI 0.858, 0.812–0.902), SVM (AUC, minCI–maxCI 0.859, 0.819–0.910), and XGB
+ (AUC, minCI–maxCI 0.821, 0.764–0.894). The model performed well. Finally, according to SHAP, among all five 
+models, HB played the most important role in model prediction and interpretation.
+
+Conclusion
+The five models we developed all performed well in predicting the likelihood of blood transfusion after hip 
+fracture surgery. Therefore, we believed that the prediction model based on machine learning had great
+ application prospects in clinical practice, which could help clinicians better predict the risk of blood 
+transfusion after hip fracture surgery.

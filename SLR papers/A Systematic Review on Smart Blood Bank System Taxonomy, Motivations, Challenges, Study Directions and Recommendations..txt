@@ -1,0 +1,20 @@
+Abstract
+This work introduces a systematic review of state-of-the-art studies about enhancing the blood banks systems
+ based on modern and smart technologies in line with the healthcare sector development, such as 
+artificial intelligence, the Internet of things, blockchain, cloud computing, as well as machine learning, 
+novel Multiple criteria decision-making (MCDM) method, and a fuzzy stochastic programming approach, all used 
+to cover issues in the blood banks. Then, taxonomy has been built to group articles according to their 
+motivations, objectives, and challenges. The search has been conducted in four major databases: IEEE Xplore, 
+Science Direct, Springer, and PubMed. The final sets were included 54. Most articles (22 out of 54) about 
+blood bank systems: computer and mobile-based blood bank systems(13), blood donor searching systems(5), and 
+Internet of Things-based blood banks(4). Reviews (12 out of 54) have discussed the importance of 
+smart technologies in blood donations. Studies (15 out of 54) have included various analyses about 
+inventory issues with blood/platelet supply chain networks problems in disasters. Meanwhile, few articles (
+5) have presented devices to detect blood groups and measure viscosity in an easy, costeffective way. This 
+work also has provided an overview of the recent contributions in blood banks mechanisms from 2017 to 2021 
+facilitating the donation in difficult situations, monitoring blood inventory. Besides, has highlighted the 
+weaknesses in medical care techniques in developing countries suffering from disasters, diseases, and wars. 
+On the other hand, how some limitations in such applications need to take more seriously ex: security, and 
+privacy, older people may face problems in operating, as well as internet and power connectivity which are 
+the main worries. We anticipate that this systematic review can help other researchers grasp the available 
+concepts and gaps so that they can subsequently add to this type of research.

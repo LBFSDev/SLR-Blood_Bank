@@ -1,0 +1,15 @@
+Abstract
+We aim to design an effective supply chain network for a blood distribution system to satisfy the needs of 
+hospitals in a certain region. In the analyzed current system, each hospital keeps a certain level of inventory,
+ received at certain time periods by the shipments from a main blood bank. We propose an alternative system, 
+in which some of the hospitals are selected as local blood banks (LBB) and all other hospitals will be assigned 
+to an LBB. More frequent shipments will be made from LBBs to these hospitals, leading to lower inventory levels 
+to be kept at each hospital. The inventories kept separately at the hospitals in the current system will be 
+pooled at the selected LBBs in the proposed system. We develop a mixed integer nonlinear programming (MINLP) 
+model to determine the optimal selection of LBBs, assignment of hospitals to LBBs, optimal inventory levels 
+at each LBB and routing decisions among the facilities in order to minimize total system costs. We also propose
+ a piecewise linear approximation method and a simulated annealing heuristic approach to find the solution of 
+this problem. The proposed model and the solution techniques are applied on a real life case study for the 
+blood distribution network in Istanbul. It is observed that significant improvements can be obtained by the 
+proposed system when compared to the current design. Performances of the solution methods are also compared 
+and a sensitivity analysis related to system parameters is presented via detailed numerical experiments.

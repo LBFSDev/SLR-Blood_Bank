@@ -1,0 +1,19 @@
+Abstract
+Reconfiguring the structure of the supply chain network is one of the most strategic and vital decisions in 
+designing a supply chain network. In this study, a Closed-Loop Blood Supply Chain Network (CLBSCN) considering
+ blood group compatibility, ABO-Rh(D), and blood product shelf life has been studied to determine the best 
+strategic and tactical decisions simultaneously considering lateral resupply/transshipment and service-level 
+maximization. Several vital parameters, including supply and demand, are considered fuzzy numbers to approximate
+reality due to the nature of the world. Furthermore, two crucial factors include ABO-Rh(D) and blood product 
+shelf life considered, while the concept of lateral resupply governs the interconnections of hospitals’ excess 
+blood units. We propose a fuzzy multi-objective Mixed-Integer Non-Linear Programming (MINLP) model to consider 
+two critical objective functions: minimizing the total costs of the network and maximizing the minimum service 
+level to the patients at each Hospital. The fuzzy multi-objective MINLP model is converted to a deterministic 
+multi-objective model using the equivalent auxiliary crisp model to deal with uncertainty. Then, by utilizing 
+two interactive fuzzy solution approaches, the results have been compared based on a real case study to suggest 
+the best solution for the proposed model. Also, we conduct sensitivity analysis on essential parameters such as 
+demand, supply, and capacity to understand how these parameter variations impact two proposed objective functions
+. Then, the proposed model is tested on a real case study for model validation. The results confirmed that 
+considering the lateral resupply could significantly save the costs of the designed network by a total of
+ $343,000. Interestingly, maximizing the minimum service level at hospitals increased the service level from 
+58% to 68%.

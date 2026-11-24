@@ -1,0 +1,29 @@
+Abstract (2026)
+
+Objectives
+Public banking of umbilical cord blood (UCB) remains important as a source of donor cells for hematopoietic cell transplantation (HCT).
+Given reductions in global cord blood transplant activity, the economic value of UCB banking may be questioned. We performed 
+a scoping review to gain a full and current understanding of economic evaluations of public UCB banking.
+
+Methods
+We conducted a systematic search to June 2024 in Medline, Embase, Cochrane Central, Health Technology Assessment,
+Econlit, Scopus, and cumulative index to nursing and allied health literature (CINAHL) databases.
+
+Results
+Our search identified 13 studies published between 1999 and 2019, predominantly from the United States and Europe
+.Of these, five are classified as full economic evaluations, with two employing cost-effectiveness analysis, 
+one applying cost-utility analysis and two applying cost–benefit analysis. Key findings reveal a shift from 
+evaluating the optimal inventory size and costs associated with establishing cord banks, to the evaluation of 
+strategies that increase usage and reduce costs of bank operations. Only two studies considered the societal 
+gain from transplant survivors,
+noting many cord blood transplant recipients are pediatric with significant gain in quality-adjusted life years
+that offset the high costs of operating public cord banks. Studies addressing the needs of underrepresented 
+populations were lacking.
+
+Conclusions
+Our analysis highlights the evolving landscape of public UCB banking economic evaluations. Updated full economic
+studies are needed to understand the current landscape given potential usage by specific sub-groups of the 
+population, reduced global usage for HCT, and the emergence of novel uses of cord blood.
+
+
+

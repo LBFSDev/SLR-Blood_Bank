@@ -1,0 +1,322 @@
+=====================================================================
+FINAL TAXONOMY OF RESEARCH DIMENSIONS
+Blood Supply Chain and Blood Bank Management Literature
+=====================================================================
+
+Structure:
+Level 1 = Category (8)
+Level 2 = Dimension (34: the 19 original dimensions + 15 new dimensions)
+Level 3 = Sub-dimensions
+
+=====================================================================
+PART A : OVERVIEW
+=====================================================================
+
+1. Research Design and Analytical Methods
+   1.1 Scientometric Mapping
+   1.2 Qualitative Content Analysis
+   1.3 Qualitative Framework
+   1.4 Statistical and Epidemiological Data Analysis
+   1.5 Network Analysis Approaches
+   1.6 Geospatial Analysis and GIS
+
+2. Optimization, Modelling and Intelligent Techniques
+   2.1 Optimization Approaches
+   2.2 Quantitative Optimization
+   2.3 Hybrid Optimization Algorithms / Metaheuristics
+   2.4 Simulation and Modeling Approaches
+   2.5 Uncertainty Quantification
+   2.6 Machine Learning and Artificial Intelligence Techniques
+   2.7 Decision Support Approaches
+
+3. Blood Supply Chain Planning and Operations
+   3.1 Blood Supply Chain Network Design
+   3.2 Blood Bank Location and Selection Optimization
+   3.3 Blood Supply and Demand Forecasting
+   3.4 Donor Management, Recruitment and Retention
+   3.5 Inventory Management and Optimization
+   3.6 Vehicle Routing and Distribution Optimization
+   3.7 Blood Allocation and Compatibility Frameworks
+   3.8 Blood Wastage and Shelf-life Management
+
+4. Blood Products, Safety and Quality
+   4.1 Blood Products and Transfusion Strategies
+   4.2 Transfusion-Transmissible Infections and Blood Safety Screening
+   4.3 Quality Assurance and Performance Evaluation
+
+5. Risk, Resilience and Emergency Management
+   5.1 Risk Category
+   5.2 Risk Management Approach
+   5.3 Emergency Preparedness and Crisis Response
+
+6. Digital Health and Information Technology
+   6.1 Digital Health Technology
+   6.2 IoT and Sensor-based Monitoring
+   6.3 Data Security, Privacy and Integrity
+
+7. Governance, Policy, Ethics and Economics
+   7.1 Governance, Coordination and Collaboration Networks
+   7.2 Ethical, Legal and Regulatory Frameworks
+   7.3 Cost and Economic Evaluation
+
+8. Application Context
+   8.1 Application Domain
+
+=====================================================================
+PART B : DETAILED TAXONOMY (Category > Dimension > Sub-dimensions)
+=====================================================================
+
+1. RESEARCH DESIGN AND ANALYTICAL METHODS
+---------------------------------------------------------------------
+1.1 Scientometric Mapping
+    - Bibliometric and co-citation mapping
+    - Keyword co-occurrence and thematic clustering
+    - Publication trend and research-gap analysis
+
+1.2 Qualitative Content Analysis
+    - Literature, narrative and rapid reviews
+    - Semi-structured interviews and focus groups
+    - Thematic coding and saturation
+    - Topic and theme extraction from text (news, social media)
+    - Experience reports, commentaries and best-practice synthesis
+    - Comparative analysis of existing systems and frameworks
+
+1.3 Qualitative Framework
+    - Conceptual and assessment frameworks (multi-domain service assessment)
+    - Supply / processing / distribution management domains
+    - Phased national blood shortage plans (Green, Amber, Red, Recovery)
+    - Emergency rationing frameworks
+    - Comparative compatibility and distribution frameworks
+
+1.4 Statistical and Epidemiological Data Analysis
+    - Cross-sectional surveys
+    - Retrospective registry and annual-report analysis
+    - Before–after (pre/post) intervention comparisons
+    - Descriptive statistics (frequencies, means, medians, CI)
+    - Hypothesis testing (chi-square, ANOVA, Kruskal–Wallis, Wilcoxon, regression)
+    - Prevalence, rate and trend analysis
+
+1.5 Network Analysis Approaches
+    - Graph-based analysis of actors and links
+    - Collaboration and co-authorship networks
+    - Centrality and connectivity measures
+
+1.6 Geospatial Analysis and GIS
+    - GIS mapping and geocoding
+    - Buffer, proximity and select-by-location analysis
+    - Choropleth and census-joined maps
+    - Geographic access and blood deserts
+    - Location-allocation analysis
+
+2. OPTIMIZATION, MODELLING AND INTELLIGENT TECHNIQUES
+---------------------------------------------------------------------
+2.1 Optimization Approaches
+    - Mathematical programming (LP, MILP, MINLP)
+    - Multi-objective optimization (Pareto solutions)
+    - Robust and possibilistic programming
+    - Predict-then-optimize pipelines
+    - Algorithm-driven redistribution and process optimization
+
+2.2 Quantitative Optimization
+    - Objective functions (cost, time, shortage, wastage, unmet demand)
+    - Solution methods (exact solvers, weighted Tchebycheff, piecewise linear approximation)
+    - Routing heuristics (Clarke–Wright savings, 2-opt)
+    - Inventory formulas (safety stock, critical and maximum levels)
+    - Performance and accuracy metrics (MAE, RMSE, MAPE, R², accuracy)
+
+2.3 Hybrid Optimization Algorithms / Metaheuristics
+    - Simulated annealing
+    - Nature-inspired metaheuristics
+    - Integration of mathematical programming with heuristics
+    - Metaheuristic tuning of machine-learning models
+
+2.4 Simulation and Modeling Approaches
+    - Time-series models (ARIMA, ETS, SARIMA, Prophet, hierarchical time series)
+    - Predictive and regression models
+    - Deterministic systems-flow and analytic models
+    - Scenario simulation
+    - Population-specific distribution modeling
+
+2.5 Uncertainty Quantification
+    - Robust and possibilistic uncertainty modelling
+    - Sensitivity analysis
+    - Prediction intervals
+    - External, out-of-sample and cross-validation
+    - Rolling-origin backtesting and model generalizability
+
+2.6 Machine Learning and Artificial Intelligence Techniques
+    - Neural networks (backpropagation, Kohonen SOM, LSTM)
+    - Ensemble and tree-based learners (Random Forest, XGBoost)
+    - Classical classifiers (SVM, KNN, decision trees)
+    - Deep learning and hybrid ensembles
+    - Topic modelling
+    - Feature engineering, feature selection and explainability
+
+2.7 Decision Support Approaches
+    - Decision support tools and dashboards
+    - Prediction-based decision support
+    - Clinical and prehospital transfusion decision support
+    - Location, selection and routing decisions
+    - Expert and committee consensus decision making
+    - Reports and analytics for managers and policymakers
+
+3. BLOOD SUPPLY CHAIN PLANNING AND OPERATIONS
+---------------------------------------------------------------------
+3.1 Blood Supply Chain Network Design
+    - Multi-echelon network configuration
+    - Closed-loop and reverse logistics
+    - Facility flows across collection, processing, storage, distribution and disposal
+
+3.2 Blood Bank Location and Selection Optimization
+    - Local blood bank and hospital selection
+    - Permanent and temporary collection centre siting
+    - Mobile blood drive site selection
+
+3.3 Blood Supply and Demand Forecasting
+    - Demand forecasting (by blood group, product, department, region)
+    - Donation and supply forecasting
+    - Blood loss and patient requirement estimation
+    - Utilisation and workload trends
+    - Seasonal, holiday and event-driven patterns
+
+3.4 Donor Management, Recruitment and Retention
+    - Donor registration and eligibility
+    - Donor demographics and behaviour
+    - Recruitment campaigns and community engagement
+    - Donor retention and reminders
+    - Donor safety
+    - Mobile and fixed donation sites
+    - Rare and special donor panels
+
+3.5 Inventory Management and Optimization
+    - Stock level policies (safety, critical, maximum stock)
+    - Centralised and pooled inventory
+    - Real-time inventory tracking and reporting
+    - Issuing policies (FIFO, days on hand)
+    - Inventory planning by blood group and product
+
+3.6 Vehicle Routing and Distribution Optimization
+    - Vehicle routing and route improvement
+    - Inter-hospital redistribution and transshipment
+    - Transport modes (ground, ambulance, helicopter)
+    - Delivery time and cold-chain transport
+
+3.7 Blood Allocation and Compatibility Frameworks
+    - ABO/RhD compatibility and identical-group prioritisation
+    - Antigen-negative and rare blood matching
+    - Allocation across hospitals and departments
+    - Rationing and prioritisation during shortage
+
+3.8 Blood Wastage and Shelf-life Management
+    - Expiry and outdate wastage
+    - Discard rates
+    - Near-expiry tracking and recirculation
+    - Shelf-life and storage age of components
+
+4. BLOOD PRODUCTS, SAFETY AND QUALITY
+---------------------------------------------------------------------
+4.1 Blood Products and Transfusion Strategies
+    - Whole blood and low-titre group O whole blood
+    - Plasma types (fresh frozen, liquid, lyophilised, convalescent)
+    - Platelets (including cold-stored)
+    - Special red cell products (leucoreduced, washed, irradiated, frozen, antigen-negative, paediatric splits)
+    - Prehospital transfusion
+    - Apheresis therapies and exchange transfusion
+
+4.2 Transfusion-Transmissible Infections and Blood Safety Screening
+    - HIV, HBV, HCV and syphilis
+    - Emerging and vector-borne infections
+    - NAT and ELISA screening
+    - TTI prevalence and trends
+
+4.3 Quality Assurance and Performance Evaluation
+    - Quality indicators and performance scoring
+    - External and internal quality assurance
+    - Proficiency testing
+    - SOP compliance and haemovigilance
+    - Staff training and competency
+    - Operational efficiency metrics
+
+5. RISK, RESILIENCE AND EMERGENCY MANAGEMENT
+---------------------------------------------------------------------
+5.1 Risk Category
+    - Supply risks (shortage, donor decline, scarce blood groups)
+    - Demand risks (demand surges, demand uncertainty)
+    - Operational risks (wastage, manual records, delays, human error)
+    - Clinical risks (haemorrhage, incompatibility, alloimmunisation, infection)
+    - External risks (disasters, armed conflict, pandemics)
+    - Information risks (data breaches, unauthorised access)
+
+5.2 Risk Management Approach
+    - Mitigation and contingency strategies
+    - Inventory thresholds, alerts and redistribution
+    - Restrictive transfusion and patient blood management
+    - Backup systems and business continuity
+    - Training, education and process standardisation
+
+5.3 Emergency Preparedness and Crisis Response
+    - Armed conflicts
+    - Man-made and natural disasters
+    - Pandemics
+    - Emergency plans and drills
+    - Business continuity
+    - Mass-casualty response
+
+6. DIGITAL HEALTH AND INFORMATION TECHNOLOGY
+---------------------------------------------------------------------
+6.1 Digital Health Technology
+    - Alert and notification systems
+    - Disaster management and emergency healthcare applications
+    - Blood donation and health monitoring mobile applications
+    - Web-based blood bank management systems
+    - Cloud platforms
+    - Hospital and transfusion information system integration
+    - GPS-based donor and blood bank locators
+    - Electronic consent and e-signatures
+
+6.2 IoT and Sensor-based Monitoring
+    - Sensor nodes and microcontrollers
+    - Cold-chain temperature and humidity monitoring
+    - Real-time stock sensing
+    - Beacon-based donor finding
+
+6.3 Data Security, Privacy and Integrity
+    - Authentication
+    - Role-based access control
+    - Encryption
+    - Auditing and integrity verification
+    - Regulatory data-protection compliance
+
+7. GOVERNANCE, POLICY, ETHICS AND ECONOMICS
+---------------------------------------------------------------------
+7.1 Governance, Coordination and Collaboration Networks
+    - National and international coordination bodies
+    - Inter-organisational collaboration
+    - Command and coordination centres
+    - Policy and strategic planning
+
+7.2 Ethical, Legal and Regulatory Frameworks
+    - Regulations and standards
+    - Donor deferral rules
+    - Informed consent
+    - Fair allocation and prioritisation ethics
+    - Clinical trial and regulatory compliance
+
+7.3 Cost and Economic Evaluation
+    - Total cost minimisation
+    - Cost savings
+    - Labour cost
+    - Product and programme cost estimation
+    - Economic feasibility
+
+8. APPLICATION CONTEXT
+---------------------------------------------------------------------
+8.1 Application Domain
+    - Transfusion haematology
+    - Emergency, prehospital and trauma care
+    - Military and conflict settings
+    - Disaster and humanitarian relief
+    - Hospital and intra-hospital blood management
+    - National and regional blood services
+    - Low- and middle-income country settings
+    - Clinical trials

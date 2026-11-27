@@ -1,0 +1,84 @@
+Note Where To Find Dimensions : 
+
+1) Abstract : Main themes and research areas
+2) Literature Review / Background : Existing concepts, theories, and frameworks
+3) Theoretical Framework / Conceptual Framework : Previously established dimensions
+4) Methodology : How dimensions or categories were identified
+5) Results / Findings :	Dimensions and attributes extracted from the literature
+6) Discussion : Relationships between dimensions and their importance
+7) Tables and Figures : Often contain the actual dimensions and corresponding attributes
+
+
+
+
+
+
+Dimensions (1----7):
+-Scientrometric mapping 
+-Qualitative content analysis 
+-Optimization approaches 
+-Decision support approaches 
+-Simulation and Modeling approaches 
+-Network analysis approaches 
+-Risk Category 
+-Risk management approach 
+-Quantitative optimization 
+-Qualitative framework 
+-Blood supply and Demand forcasting (includes blood loss estimation methods ...)  
+-Digital Health Technology (including alert & notification , Disaster management , Emergency healthcare , Blood donation , health monitoring mobile applications)
+-Vehicle Routing and Distribution Optimization (New dimension because of paper1)
+-Inventory Management and Optimization (New dimension because of paper1)
+-Blood Bank Location and Selection Optimization (New dimension because of paper1)
+-Hybrid Optimization Algorithms / Metaheuristics (New dimension because of paper1)
+-Uncertainty Quantification (New dimension because of paper2) 
+-Application Domain (New dimension because of paper2) : includes(paper2 domain is 	
+transfusion haematology which focuses on application Blood Allocation and Transfusion Decision-Making...)
+-Blood Allocation and Compatibility Frameworks (New dimension because of paper2)
+
+=====================================================================
+Papers
+=====================================================================
+paper1 :
+-in Optimization Approaches (MINLP,Piecewise Linear Approximation,Simulated Annealing Heuristic)
+-in Decision Support Approaches (Local Blood Bank Hospital Selection,Optimal Inventory Level Determination,Vehicle Routing Decisions)
+-in Quantitative Optimization (MINLP,Simulated Annealing,Clarke–Wright Savings Algorithm,2-Opt Algorithm)
+-in Vehicle Routing and Distribution Optimization (Initial Vehicle Route Construction, Route Improvement and Optimization)
+-in Inventory Management and Optimization (Optimal Blood Inventory Allocation)
+-in Blood Bank Location and Selection Optimization (Optimal Local Blood Bank Hospital Selection)
+-in Hybrid Optimization Algorithms / Metaheuristics (Integration of Mathematical Programming and Heuristic Algorithms)
+
+paper2 : 
+-in Qualitative Content Analysis (Comparative analysis of blood allocation frameworks)
+-in Optimization Approaches (Distribution-based allocation approach)
+-in Decision Support Approaches (ABO-compatible blood allocation and transfusion prioritization)
+-in Simulation and Modeling Approaches (Population-specific blood distribution modeling)
+-in Risk Category (Blood group incompatibility and unequal distribution among compatible recipients)
+-in Risk Management Approach (Prioritization of ABO-identical transfusions)
+-in Quantitative Optimization (Sum-normalization; equal and weighted distribution)
+-in Qualitative Framework (Comparative blood group compatibility and distribution frameworks)
+-in Blood Supply and Demand Forecasting (Actual ABO blood group distribution in populations/subpopulations as allocation input)
+-in Application Domain (Transfusion haematology: blood allocation and transfusion decision-making)
+-in Blood Allocation and Compatibility Frameworks (ABO-compatible allocation; ABO-identical prioritization; equal/weighted distribution; population-specific allocation frameworks)
+
+paper3: 
+-in Optimization Approaches (Automation and simplification of blood bank operations)
+-in Decision Support Approaches (Centralized access to donor information and patient blood requirements)
+-in Risk Category (Inaccurate blood inventory information and inefficient blood bank record management)
+-in Risk Management Approach (Improved information accuracy and centralized donor/ patient record management)
+-in Blood Supply and Demand Forecasting (Monitoring blood group availability, blood collection, and patient requirements)
+-in Digital Health Technology (Python-based blood bank management application; donor information management; patient requirement management; blood availability monitoring; blood collection and supply management; automation and digitization of records)
+-in Inventory Management and Optimization (Blood group inventory tracking; monitoring blood availability; blood collection and supply record management)
+-in Application Domain (Blood bank management and operations; blood donation and supply management)
+
+paper4: 
+-in Optimization Approaches (Machine-learning-based prediction of optimal transfusion product combinations and quantities)
+-in Decision Support Approaches (Predictive decision support for prehospital transfusion decisions; prediction of required blood products and optimal transfusion combinations)
+-in Simulation and Modeling Approaches (Predictive machine learning models; supervised learning and multiclass transfusion prediction modeling)
+-in Risk Category (Trauma-related haemorrhage; risk of severe bleeding and preventable early mortality; risk of delayed or inadequate transfusion)
+-in Risk Management Approach (Early identification of trauma patients requiring transfusion; prehospital transfusion decision support; prediction of transfusion requirements)
+-in Quantitative Optimization (XGBoost regression to estimate optimal packed red blood cell (PRBC) units; multiclass prediction of optimal blood product combinations)
+-in Blood Supply and Demand Forecasting (Prediction of individual patient blood product requirements; estimation of PRBC quantities; prediction of demand for different transfusion products)
+-in Digital Health Technology (Artificial intelligence and machine learning; Python-based predictive application; automated transfusion requirement prediction; clinical decision support)
+-in Uncertainty Quantification (External validation across multiple trauma registries and countries; model generalizability assessment)
+-in Application Domain (Trauma care; prehospital emergency medicine; haemorrhage management; transfusion haematology; prehospital blood transfusion decision-making)
+ 

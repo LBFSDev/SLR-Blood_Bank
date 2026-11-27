@@ -1,0 +1,562 @@
+Note Where To Find Dimensions : 
+
+1) Abstract : Main themes and research areas
+2) Literature Review / Background : Existing concepts, theories, and frameworks
+3) Theoretical Framework / Conceptual Framework : Previously established dimensions
+4) Methodology : How dimensions or categories were identified
+5) Results / Findings :	Dimensions and attributes extracted from the literature
+6) Discussion : Relationships between dimensions and their importance
+7) Tables and Figures : Often contain the actual dimensions and corresponding attributes
+
+
+
+
+
+
+Dimensions (1----40):
+-Scientrometric mapping 
+-Qualitative content analysis 
+-Optimization approaches 
+-Decision support approaches 
+-Simulation and Modeling approaches 
+-Network analysis approaches 
+-Risk Category 
+-Risk management approach 
+-Quantitative optimization 
+-Qualitative framework 
+-Blood supply and Demand forcasting (includes blood loss estimation methods ...)  
+-Digital Health Technology (including alert & notification , Disaster management , Emergency healthcare , Blood donation , health monitoring mobile applications)
+-Vehicle Routing and Distribution Optimization (New dimension because of paper1)
+-Inventory Management and Optimization (New dimension because of paper1)
+-Blood Bank Location and Selection Optimization (New dimension because of paper1)
+-Hybrid Optimization Algorithms / Metaheuristics (New dimension because of paper1)
+-Uncertainty Quantification (New dimension because of paper2) 
+-Application Domain (New dimension because of paper2) : includes(paper2 domain is 	
+transfusion haematology which focuses on application Blood Allocation and Transfusion Decision-Making...)
+-Blood Allocation and Compatibility Frameworks (New dimension because of paper2)
+-Quality Assurance and Performance Evaluation (New dimension because of paper5) : includes(quality indicators, scoring of blood bank performance, external/internal quality assurance, proficiency testing, SOP compliance, staff training and competency, operational efficiency metrics)
+-Statistical and Epidemiological Data Analysis (New dimension because of paper5) : includes(cross-sectional surveys, retrospective registry/report analysis, descriptive statistics, hypothesis testing, prevalence and trend analysis)
+-Donor Management, Recruitment and Retention (New dimension because of paper5) : includes(donor registration and eligibility, donor demographics and behaviour, recruitment campaigns, donor retention, donor safety, mobile and fixed donation sites)
+-Blood Wastage and Shelf-life Management (New dimension because of paper6) : includes(expiry/outdate wastage, discard rates, near-expiry tracking and recirculation, shelf-life and storage age of components)
+-Machine Learning and Artificial Intelligence Techniques (New dimension because of paper7) : includes(neural networks, ensemble/tree-based learners, deep learning, topic modelling, feature selection and explainability)
+-Data Security, Privacy and Integrity (New dimension because of paper8) : includes(authentication, role-based access control, encryption, auditing and integrity verification, regulatory data-protection compliance)
+-Governance, Coordination and Collaboration Networks (New dimension because of paper11) : includes(national/international coordination bodies, inter-organisational collaboration, command centres, policy and strategic planning)
+-IoT and Sensor-based Monitoring (New dimension because of paper12) : includes(sensor nodes, microcontrollers, cold-chain temperature/humidity monitoring, real-time stock sensing)
+-Emergency Preparedness and Crisis Response (New dimension because of paper15) : includes(armed conflicts, man-made and natural disasters, pandemics, emergency plans, drills, business continuity, mass-casualty response)
+-Blood Supply Chain Network Design (New dimension because of paper18) : includes(multi-echelon network configuration, closed-loop/reverse logistics, facility-flow design across collection, processing, storage, distribution and disposal)
+-Cost and Economic Evaluation (New dimension because of paper18) : includes(total cost minimisation, cost savings, labour cost, product/programme cost estimation, economic feasibility)
+-Ethical, Legal and Regulatory Frameworks (New dimension because of paper19) : includes(regulations and standards, donor deferral rules, informed consent, fair allocation and prioritisation ethics, trial/regulatory compliance)
+-Blood Products and Transfusion Strategies (New dimension because of paper19) : includes(whole blood/LTOWB, plasma types, platelets, special RBC products, convalescent plasma, prehospital transfusion, apheresis therapies)
+-Transfusion-Transmissible Infections and Blood Safety Screening (New dimension because of paper19) : includes(HIV, HBV, HCV, syphilis, emerging/vector-borne infections, NAT/ELISA screening, TTI prevalence and trends)
+-Geospatial Analysis and GIS (New dimension because of paper26) : includes(GIS mapping, geocoding, buffer/proximity analysis, choropleth maps, geographic access and blood deserts)
+
+
+
+=====================================================================
+Papers
+=====================================================================
+paper1 :
+-in Optimization Approaches (MINLP,Piecewise Linear Approximation,Simulated Annealing Heuristic)
+-in Decision Support Approaches (Local Blood Bank Hospital Selection,Optimal Inventory Level Determination,Vehicle Routing Decisions)
+-in Quantitative Optimization (MINLP,Simulated Annealing,Clarke–Wright Savings Algorithm,2-Opt Algorithm)
+-in Vehicle Routing and Distribution Optimization (Initial Vehicle Route Construction, Route Improvement and Optimization)
+-in Inventory Management and Optimization (Optimal Blood Inventory Allocation)
+-in Blood Bank Location and Selection Optimization (Optimal Local Blood Bank Hospital Selection)
+-in Hybrid Optimization Algorithms / Metaheuristics (Integration of Mathematical Programming and Heuristic Algorithms)
+
+paper2 : 
+-in Qualitative Content Analysis (Comparative analysis of blood allocation frameworks)
+-in Optimization Approaches (Distribution-based allocation approach)
+-in Decision Support Approaches (ABO-compatible blood allocation and transfusion prioritization)
+-in Simulation and Modeling Approaches (Population-specific blood distribution modeling)
+-in Risk Category (Blood group incompatibility and unequal distribution among compatible recipients)
+-in Risk Management Approach (Prioritization of ABO-identical transfusions)
+-in Quantitative Optimization (Sum-normalization; equal and weighted distribution)
+-in Qualitative Framework (Comparative blood group compatibility and distribution frameworks)
+-in Blood Supply and Demand Forecasting (Actual ABO blood group distribution in populations/subpopulations as allocation input)
+-in Application Domain (Transfusion haematology: blood allocation and transfusion decision-making)
+-in Blood Allocation and Compatibility Frameworks (ABO-compatible allocation; ABO-identical prioritization; equal/weighted distribution; population-specific allocation frameworks)
+
+paper3: 
+-in Optimization Approaches (Automation and simplification of blood bank operations)
+-in Decision Support Approaches (Centralized access to donor information and patient blood requirements)
+-in Risk Category (Inaccurate blood inventory information and inefficient blood bank record management)
+-in Risk Management Approach (Improved information accuracy and centralized donor/ patient record management)
+-in Blood Supply and Demand Forecasting (Monitoring blood group availability, blood collection, and patient requirements)
+-in Digital Health Technology (Python-based blood bank management application; donor information management; patient requirement management; blood availability monitoring; blood collection and supply management; automation and digitization of records)
+-in Inventory Management and Optimization (Blood group inventory tracking; monitoring blood availability; blood collection and supply record management)
+-in Application Domain (Blood bank management and operations; blood donation and supply management)
+
+paper4: 
+-in Optimization Approaches (Machine-learning-based prediction of optimal transfusion product combinations and quantities)
+-in Decision Support Approaches (Predictive decision support for prehospital transfusion decisions; prediction of required blood products and optimal transfusion combinations)
+-in Simulation and Modeling Approaches (Predictive machine learning models; supervised learning and multiclass transfusion prediction modeling)
+-in Risk Category (Trauma-related haemorrhage; risk of severe bleeding and preventable early mortality; risk of delayed or inadequate transfusion)
+-in Risk Management Approach (Early identification of trauma patients requiring transfusion; prehospital transfusion decision support; prediction of transfusion requirements)
+-in Quantitative Optimization (XGBoost regression to estimate optimal packed red blood cell (PRBC) units; multiclass prediction of optimal blood product combinations)
+-in Blood Supply and Demand Forecasting (Prediction of individual patient blood product requirements; estimation of PRBC quantities; prediction of demand for different transfusion products)
+-in Digital Health Technology (Artificial intelligence and machine learning; Python-based predictive application; automated transfusion requirement prediction; clinical decision support)
+-in Uncertainty Quantification (External validation across multiple trauma registries and countries; model generalizability assessment)
+-in Application Domain (Trauma care; prehospital emergency medicine; haemorrhage management; transfusion haematology; prehospital blood transfusion decision-making)
+ 
+
+paper5 : [Evaluating blood transfusion services in a low- and middle-income country: implications for quality assurance and patient safety — Sebaa et al., BMC Health Services Research, 2026]
+-in Qualitative Framework (Seven-domain blood transfusion service assessment framework built on WHO, AABB, ISBT and EDQM standards: staffing, operations, equipment/reagent quality control, procedural adherence, donor management, staff training, data management)
+-in Risk Category (Transfusion errors and adverse outcomes; gaps in advanced immunohaematology testing (phenotyping in 17.9%, extended antibody identification in 32.1%); low participation in international proficiency testing (10.7%); limited routine blood product quality monitoring; political and economic instability)
+-in Risk Management Approach (Strengthening external quality assurance participation; expanding access to advanced testing; staff training and donor/patient education; contingency and backup plans for information system failure)
+-in Digital Health Technology (Blood bank information systems and electronic data management (100% governmental vs 57.1% nongovernmental, p = 0.016); record keeping and data backup)
+-in Application Domain (Blood transfusion services in a low- and middle-income, conflict-affected setting (West Bank, Palestine); transfusion safety and blood supply chain quality)
+-in Quality Assurance and Performance Evaluation (Yes/No indicator composite scoring per domain; overall mean percent BTS score; governmental vs nongovernmental benchmarking; preventive equipment maintenance and UPS availability; personnel score 87.8%; ABO grouping and crossmatching > 89%)
+-in Statistical and Epidemiological Data Analysis (Descriptive cross-sectional survey of 28 blood banks; structured interviews with directors; SPSS frequencies and percentages; chi-square comparisons between sectors)
+-in Donor Management, Recruitment and Retention (Donor management domain: confidential donor interviews, donor safety procedures, setting of blood donation; donor education)
+
+paper6 : [Implementation of an algorithm for optimized multisite distribution of red blood cell concentrates: an efficacy analysis — Guarcello et al., Blood Transfusion, 2026]
+-in Optimization Approaches (Algorithm-driven redistribution of RBC units between sites according to formal shortage and surplus scenarios)
+-in Decision Support Approaches (Spreadsheet-based decision-support tool (Microsoft Excel with VBA macros); visual "blood-drop" dashboard with green/yellow/red inventory status; daily PDF bulletin to all transfusion services)
+-in Quantitative Optimization (Safety Stock = MAX + 3×SD; Critical Inventory Level = ΣMEAN + 1×SD; Maximum Stock Level = ΣMAX + 3×SD; shortage allocation proportional to deficit weighted by weekly collection share; surplus distributed by annual consumption and capped by cold-storage capacity)
+-in Risk Category (Expiry wastage from overstocking; understocking requiring costly external compensation; increased wastage of Rh(D)-negative units after implementation; restricted assignability of Rh-negative C/E/Kell-positive units)
+-in Risk Management Approach (Tiered inventory thresholds; 15-day near-expiry flag with recirculation to high-turnover centres; dedicated rules for Rh-negative "apex" and AB units; recommended Blood Inventory Manager role and automatic transfer orders)
+-in Blood Supply and Demand Forecasting (Historical 2022–2024 daily consumption stratified by ABO/Rh group and site used to set thresholds; recommendation to add predictive analytics and smooth Rh-negative donor scheduling against forecast demand)
+-in Digital Health Technology (Data extracted from regional transfusion management system EmoNet; real-time inventory snapshot; colour-coded alert indicators; planned integration with transfusion management systems)
+-in Vehicle Routing and Distribution Optimization (Daily multisite inter-hospital RBC redistribution/compensation within the Pavia DMTE network)
+-in Inventory Management and Optimization (Network-level RBC inventory governance; safety stock, critical and maximum stock levels; departmental self-sufficiency)
+-in Blood Allocation and Compatibility Frameworks (ABO/Rh-specific allocation rules; Rh-negative units carrying C, E or Kell tracked separately and returned to collecting centre; AB-group units preferentially returned)
+-in Application Domain (Multi-site regional transfusion network management (Pavia DMTE, Lombardy, Italy); RBC concentrate distribution)
+-in Statistical and Epidemiological Data Analysis (Before–after analysis of > 100,000 RBC movements; Fisher's exact test; multivariable logistic regression; Mantel–Haenszel analysis; difference-in-differences against 2024)
+-in Blood Wastage and Shelf-life Management (Expiry wastage reduced from 1.30% to 1.00% (RR 0.77; 23.3% relative reduction); 42-day RBC shelf-life; near-expiry tracking; wastage stratified by blood group and site complexity)
+
+paper7 : [Implementation of the Backpropagation Method and the Kohonen Network to Predict Blood Availability: Case Study in PMI Kota Magelang — Verdito et al., Jurnal Komtika, 2022]
+-in Decision Support Approaches (Prediction-based support for determining the monthly amount of AB blood to collect)
+-in Simulation and Modeling Approaches (Backpropagation artificial neural network with 3-10-1 architecture; Kohonen self-organizing map to initialise network weights; MATLAB nntool training and testing)
+-in Quantitative Optimization (MSE ≈ 0.0036; 3,000 epochs, learning constant and momentum tuning; Kohonen-derived initial weights reduce prediction error by an average of 26%)
+-in Risk Category (Shortage and unpredictability of scarce AB blood type stock)
+-in Blood Supply and Demand Forecasting (Monthly prediction of AB blood stock availability from the previous 3 months' stock data (2015–2017))
+-in Digital Health Technology (Software-based ANN prediction engine for blood stock)
+-in Inventory Management and Optimization (Blood stock planning for the AB blood group at PMI Magelang City)
+-in Application Domain (Indonesian Red Cross (PMI) blood stock procurement and distribution)
+-in Machine Learning and Artificial Intelligence Techniques (Supervised backpropagation ANN combined with unsupervised competitive Kohonen network; 2 years training / 1 year testing data)
+
+paper8 : [Improving Emergency Healthcare Through Real-Time Blood Status Tracking — Verma et al., IRJMETS, 2025]
+-in Decision Support Approaches (Instant access to updated blood availability across blood banks to support life-critical decisions)
+-in Risk Category (Manual record-keeping, fragmented information systems and delayed communication causing outdated records, critical shortages and expiry wastage)
+-in Risk Management Approach (Centralised real-time synchronisation of inventory; data validation, normalisation and removal of duplicate/outdated records)
+-in Digital Health Technology (Web-based Blood Availability Monitoring System; client–server architecture with RESTful APIs and cloud deployment; real-time synchronisation; search/filter by blood group and location; emergency healthcare; future alerts, mobile app and GPS nearest-bank lookup)
+-in Inventory Management and Optimization (Inventory module for adding/updating/deleting blood units by group, quantity, collection and expiry date; issuance and replenishment transaction records)
+-in Application Domain (Emergency healthcare; multi-blood-bank inventory monitoring)
+-in Data Security, Privacy and Integrity (Role-based access control for administrators, blood bank staff and healthcare institutions; secure authentication; security testing of access control; data consistency)
+
+paper9 : [Integrating machine learning and encryption for effective data management in blood bank supply chains — Kirupa Shankar & Santhi, Journal of Cloud Computing, 2025]
+-in Optimization Approaches (Banyan Tree Growth Optimization (BTGO) for tuning XGBoost hyperparameters)
+-in Decision Support Approaches (Secure classification of blood bank/healthcare data to support inventory, distribution and demand decisions)
+-in Quantitative Optimization (Classification accuracy 99.72%, cross-validation 99.66%; 37% processing-time improvement; AES-GCM latency 0.23 s; TPA verification < 0.12 s; outperforming SVM and RF by > 6%)
+-in Risk Category (Unauthorised access, manipulation and breaches of sensitive donor/patient data; encryption latency overhead in time-critical settings)
+-in Risk Management Approach (Privacy-preserving end-to-end framework; integrity verification block; regulatory compliance)
+-in Digital Health Technology (Cloud-based blood bank supply chain data management; big data handling; hash-block storage)
+-in Hybrid Optimization Algorithms / Metaheuristics (Integration of the BTGO metaheuristic with the XGBoost classifier)
+-in Application Domain (Blood bank supply chain data management in cloud environments)
+-in Machine Learning and Artificial Intelligence Techniques (XGBoost classifier; benchmark against DT, RF, KNN and SVM; SVM-based feature matching; host-proof storage feature selector; six-feature set (Shannon entropy feature degraded accuracy))
+-in Data Security, Privacy and Integrity (AES-GCM encryption; hash-block storage; host-proof storage of sensitive features; Third-Party Auditor integrity verification)
+
+paper10 : [Integrating topic-distribution features into forecasting and inventory optimization: Evidence from Taiwan's blood supply system — Wang et al., Journal of the Formosan Medical Association, 2026]
+-in Qualitative Content Analysis (Topic modelling of ~180,000 news and social-media texts into five thematic domains: epidemics, disasters/accidents, donation campaigns, blood-shortage sentiment appeals, holidays/festivals)
+-in Optimization Approaches (Predict-then-optimize pipeline embedding forecasts into inventory optimisation)
+-in Decision Support Approaches (Forecast-driven proactive inventory decision support for regional blood centres)
+-in Simulation and Modeling Approaches (SARIMAX and generalized additive models; Oracle perfect-foresight benchmark)
+-in Risk Category (Event-driven donation shocks from pandemics, disasters, holidays and campaigns causing shortages and discards)
+-in Risk Management Approach (Early-warning semantic signals for proactive inventory planning and donor mobilisation)
+-in Quantitative Optimization (Perishable-inventory MILP with predicted daily capacities as constraints; 96.9% service level vs 98.9% Oracle; RMSE reduced 28%, R² increased 0.33)
+-in Blood Supply and Demand Forecasting (Daily blood donation volume forecasting for four regional centres (2024–2025) using structured and unstructured features)
+-in Digital Health Technology (News and social-media data from ~580 online sources; Sentence-BERT embeddings)
+-in Inventory Management and Optimization (Perishable blood inventory optimisation)
+-in Uncertainty Quantification (Robustness via Diebold–Mariano, paired t, Wilcoxon and sign tests; stability of SHAP predictors)
+-in Application Domain (National blood supply system (Taiwan Blood Services Foundation))
+-in Machine Learning and Artificial Intelligence Techniques (BERTopic vs LDA, NMF and CTM; PCA-compressed lagged topic features; Gradient Boosting, XGBoost, LightGBM, CatBoost, Random Forest; SHAP explainability)
+-in Donor Management, Recruitment and Retention (Donor gender and age group, first-time vs repeat donors, mobile vs fixed donation sites and promotional campaign indicators as key predictors)
+
+paper11 : [International rare donor panels: a review — Nance et al., Vox Sanguinis, 2016]
+-in Qualitative Content Analysis (Review of the WHO International Rare Donor Panel, ISBT Working Party on Rare Donors and 20 national rare donor programmes)
+-in Qualitative Framework (ISBT "Flow Chart to Request Rare Blood from International Rare Donor Panel"; standardised case-report form on outcome of incompatible transfusion)
+-in Decision Support Approaches (Informing physicians on logistics and clinical consequences of delayed vs incompatible transfusion)
+-in Risk Category (Unavailability of rare blood; alloimmunised patients lacking high-incidence antigens; international shipping and customs delays; thawing of frozen units in transit; incompatible transfusion)
+-in Risk Management Approach (International cooperation and national contact persons; cryopreserved stock; clinical management of patients when rare blood is unavailable)
+-in Vehicle Routing and Distribution Optimization (International shipment logistics of rare liquid/frozen RBC units)
+-in Inventory Management and Optimization (Frozen rare RBC storage for 10 years or longer; national rare blood banks)
+-in Blood Allocation and Compatibility Frameworks (Rare phenotypes such as Rhnull, D--, K0, Di(b−); national definitions of rarity from 1 in 100 to 1 in 5,000; ethnicity-dependent rarity)
+-in Application Domain (Immunohaematology; provision of rare blood; international transfusion medicine)
+-in Donor Management, Recruitment and Retention (Identification of rare donors by screening, genotyping and family studies; recruitment and retention; national rare donor registries)
+-in Governance, Coordination and Collaboration Networks (WHO IRDP maintained by IBGRL; ISBT WPRD with 29 members from 23 countries; collaboration of national and regional rare donor programmes)
+
+paper12 : [IOT Based Blood Bank Monitoring and iBeacon Donor Finder — Chenthil et al., IJRASET, 2021]
+-in Decision Support Approaches (Real-time stock display on a website so blood seekers can choose the nearest bank with stock)
+-in Risk Category (Manual blood bank steps reducing accuracy and reliability; improper storage temperature; delays in contacting donors)
+-in Risk Management Approach (Continuous temperature and humidity monitoring; automatic invitation message to donors and nearest bank when stock reaches zero)
+-in Digital Health Technology (Website for live blood stock; Android iBeacon donor-finder app storing donor name, age, blood type and address; search by blood group and city; donor-to-hospital distance; SMS communication)
+-in Inventory Management and Optimization (Real-time blood stock status per rack)
+-in Application Domain (Blood bank monitoring and emergency donor finding, India)
+-in Donor Management, Recruitment and Retention (Donor database and nearest-donor identification)
+-in IoT and Sensor-based Monitoring (Temperature, humidity and IR sensor nodes on blood bank racks; NodeMCU/Raspberry Pi controller; Wi-Fi transfer to cloud server; iBeacon)
+
+paper13 : [LIFEDROP – An Emergency Blood Donor Finding System — Sindhuja et al., IJERST, 2026]
+-in Decision Support Approaches (Blood-group and location-based donor discovery; admin dashboard for monitoring users and active emergency requests)
+-in Risk Category (Slow, fragmented donor search via calls, personal networks and social media, especially in Tier-2/Tier-3 cities; temporary backend/connectivity interruptions)
+-in Risk Management Approach (Offline fallback using Local Storage and Session Storage to keep donor and request data accessible)
+-in Digital Health Technology (Python Flask REST API, Flask-SQLAlchemy over SQLite, HTML5/CSS3/JavaScript; role-based registration; emergency request broadcasting with simulated real-time notifications; functional testing; future SMS/email, GPS and mobile apps)
+-in Application Domain (Emergency healthcare; emergency blood donor finding)
+-in Donor Management, Recruitment and Retention (Donor registration, searchable donor profiles with availability status)
+-in Data Security, Privacy and Integrity (Salted password hashing with Werkzeug; Cross-Origin Resource Sharing controls; role-based authentication)
+
+paper14 : [Management Information System Web-Base on Blood Donation Service — Suartini & Ikhwan, Sinkron, 2023]
+-in Decision Support Approaches (Accurate, printable daily reports for the head of the blood transfusion unit)
+-in Risk Category (Blood stock scarcity in hospitals and PMI; manual and unqualified donor data; random contacting of potential donors through social media; expiry waste)
+-in Risk Management Approach (FIFO issuing; partnering with hospitals for distribution to reduce expiry waste)
+-in Blood Supply and Demand Forecasting (Monitoring blood stock availability and daily blood entry/exit records)
+-in Digital Health Technology (Web-based management information system (PHP, MySQL); R&D and Rapid Application Development methods; UML design; donor data, donation schedules, articles and reports; data collected through observation, interviews and literature study)
+-in Inventory Management and Optimization (FIFO stock method; daily report of blood in, blood out and available stock)
+-in Application Domain (Blood donation service of the PMI Deli Serdang blood transfusion unit, Indonesia)
+-in Donor Management, Recruitment and Retention (Donor data collection and contact; donation activity schedules; public awareness of blood donation)
+-in Blood Wastage and Shelf-life Management (Reducing expiry waste of 42-day blood via FIFO and hospital partnerships)
+
+paper15 : [Managing Blood Transfusion Services During Armed Conflicts and Man-Made Disasters — Waheed et al., Mirpur Journal of Medical Sciences, 2025]
+-in Qualitative Content Analysis (Narrative review of South Asian (India–Pakistan) and terrorist-incident experience)
+-in Qualitative Framework (Critical pillars: donor management, inventory planning, national coordination, communication strategy, institutional leadership; typology of man-made disasters; pitfalls-and-mitigation table)
+-in Risk Category (Mass casualties and unpredictable demand surges; uncoordinated donor surges causing congestion and wastage; transport blockades, power failures and communication breakdown; staff burnout)
+-in Risk Management Approach (3–7 day buffer stocks; FIFO and colour-coded expiry systems; emergency release of group-specific/O-negative uncrossmatched blood; electronic crossmatch; documentation and post-crisis audit)
+-in Digital Health Technology (BBMIS with emergency release protocols; real-time inventory dashboard; WhatsApp donor mobilisation (31.65% response); Facebook appeals; SMS alerts and mobile apps)
+-in Vehicle Routing and Distribution Optimization (Cold-chain emergency vehicles for inter-city transfers; regional supply depots; pre-arranged logistics contracts)
+-in Inventory Management and Optimization (Minimum emergency stock: RCC 150–200 units, platelets 75–100 units, FFP 50–100 units)
+-in Blood Allocation and Compatibility Frameworks (Group-specific and O-negative uncrossmatched issue; prioritising recipients in resource-limited scenarios)
+-in Application Domain (Blood transfusion services during armed conflicts, terrorism and man-made disasters, Pakistan)
+-in Quality Assurance and Performance Evaluation (Staff capacity building; disaster-specific SOPs; refresher courses; quality control in emergencies)
+-in Donor Management, Recruitment and Retention (Registry of voluntary non-remunerated donors including rare groups; appointments, staggered sessions and triage; post-crisis retention of first-time donors)
+-in Governance, Coordination and Collaboration Networks (National Blood Command Centre linked to Ministry, provincial Departments of Health and NDMA; unified media strategy)
+-in Blood Wastage and Shelf-life Management (Wastage from donor surges; FIFO and accurate forecasting as mitigation)
+-in Emergency Preparedness and Crisis Response (National/provincial blood emergency plans with command hierarchies; integration into national disaster risk reduction; mock drills and tabletop exercises; mobile BTS vans and regional collection hubs)
+
+paper16 : [Predicting Blood Donors Using Machine Learning Techniques — Kauten et al., Information Systems Frontiers, 2022]
+-in Decision Support Approaches (Targeting cost-effective donor outreach (mail, e-mail, phone) by predicting returning donors)
+-in Simulation and Modeling Approaches (Predictive classification models of donor retention)
+-in Quantitative Optimization (Matthews correlation coefficient 0.851; 80% sensitivity and 99% specificity; grid search of hyperparameter configurations)
+-in Risk Category (Declining US blood market; donor attrition; fruitless outreach costs; reduced surge capacity)
+-in Blood Supply and Demand Forecasting (Forecasting returning donors in a one-month window as a supply-side input)
+-in Digital Health Technology (Processing pipeline converting a blood centre's relational operational database (2015–2017) into a tabular classification dataset; big-data analytics)
+-in Uncertainty Quantification (Cross-validation and ROC-based model evaluation)
+-in Application Domain (Donor recruitment and retention at a large regional US blood centre)
+-in Machine Learning and Artificial Intelligence Techniques (Random Forest, Gradient Boosting, Decision Tree, SVM, k-NN and neural network classifiers; SMOTE oversampling; feature importance)
+-in Donor Management, Recruitment and Retention (Donor retention modelling using donation history, deferrals, contact codes, wait times and demographics)
+
+paper17 : [Quality Assurance Program on the Operational Efficiency of Mobile Blood Donation Service — Purificacion, IJERIP, 2026]
+-in Optimization Approaches (Process optimisation and workflow standardisation to improve operational efficiency)
+-in Qualitative Framework (Donabedian Structure–Process–Outcome model; Total Quality Management principles)
+-in Risk Category (Logistical issues, variable donor turnout, staff non-adherence, process errors and blood unit wastage in mobile collection)
+-in Risk Management Approach (Standardised workflow checklists; process monitoring and feedback; corrective measures; continuous staff training)
+-in Application Domain (Mobile blood donation services, Philippine Red Cross Rizal Chapter, Muntinlupa City)
+-in Quality Assurance and Performance Evaluation (Structured QA programme assessed by turnaround time (−23.7%), wastage (−59.6%), process error rate (−60.9%) and staff compliance (> 93%))
+-in Statistical and Epidemiological Data Analysis (Descriptive-correlational pre/post implementation design)
+-in Blood Wastage and Shelf-life Management (Blood unit wastage reduced by 59.6%)
+
+paper18 : [Robust possibilistic programming to design a closed-loop blood supply chain network considering service-level maximization and lateral resupply — Momenitabar et al., Annals of Operations Research, 2022]
+-in Optimization Approaches (Fuzzy multi-objective MINLP; robust possibilistic programming; interactive fuzzy solution methods TH and GMMT)
+-in Decision Support Approaches (Simultaneous strategic and tactical network decisions; managerial insights for national blood banks and hospitals)
+-in Simulation and Modeling Approaches (Mathematical modelling of the closed-loop network validated on a real case study in Iran)
+-in Risk Category (Fluctuating supply and demand; hospital shortages; outdated units; patients with unmatched blood groups)
+-in Risk Management Approach (Lateral resupply/transshipment between hospitals; ABO-Rh(D) substitution; maximising the minimum service level)
+-in Quantitative Optimization (Minimise total cost and maximise minimum service level; equivalent auxiliary crisp model; linearisation; lateral resupply saved $343,000; service level rose from 58% to 68%)
+-in Vehicle Routing and Distribution Optimization (Transportation flows between facilities, blood banks and hospitals; lateral transshipment)
+-in Inventory Management and Optimization (Lower required hospital inventory with lateral resupply; shelf-life constraints)
+-in Blood Bank Location and Selection Optimization (Location of temporary and permanent blood facility centres)
+-in Uncertainty Quantification (Fuzzy supply and demand parameters; sensitivity analysis on demand, supply and capacity; distance and dispersion performance measures)
+-in Blood Allocation and Compatibility Frameworks (ABO-Rh(D) compatibility matrix and preferential substitution rules)
+-in Application Domain (Closed-loop blood supply chain of national blood bank and hospitals, Iran)
+-in Blood Wastage and Shelf-life Management (Retrieval of outdated units to disposal centre; product shelf-life)
+-in Blood Supply Chain Network Design (Closed-loop network covering collection, screening, processing, storage, distribution, transportation and disposal; reverse flow of outdated units)
+-in Cost and Economic Evaluation (Total network cost minimisation; $343,000 saving from lateral resupply)
+
+paper19 : [Safety of blood and blood components in emergency situations: transfusion and organisational aspects — Budzyński, Acta Haematologica Polonica, 2026]
+-in Qualitative Content Analysis (Narrative review of literature (PubMed, Google Scholar to May 2026) and WHO, EDQM, NATO, FDA, AABB, ECDC and EU guidance)
+-in Qualitative Framework (Incident-based vs capability-based preparedness planning; centralised, decentralised and hybrid models; summary table of approaches with descriptive evidence level)
+-in Risk Category (Concurrent supply-side and demand-side crises; disruption of donor availability, testing, storage and transport; haemorrhage-induced coagulopathy)
+-in Risk Management Approach (Pre-defined activation thresholds and acceptable risk levels; continuous stock monitoring; rapid redistribution; group O stewardship)
+-in Vehicle Routing and Distribution Optimization (Validated transport solutions; interregional redistribution of components)
+-in Inventory Management and Optimization (System-level stock management based on monitoring donations and actual use)
+-in Blood Allocation and Compatibility Frameworks (Fair allocation of limited components; patient prioritisation; management of group O blood)
+-in Application Domain (Transfusion medicine in mass-casualty incidents, armed conflicts, natural disasters, epidemics/pandemics and resource-limited settings)
+-in Quality Assurance and Performance Evaluation (Quality oversight of alternative components; traceability)
+-in Donor Management, Recruitment and Retention (Donor access and qualification during crises; donor protection)
+-in Governance, Coordination and Collaboration Networks (Clear responsibilities for blood establishments, hospitals, EMS, supervisory authorities and crisis management structures; interoperability between regions)
+-in IoT and Sensor-based Monitoring (Cold-chain temperature monitoring in unstable infrastructure)
+-in Blood Wastage and Shelf-life Management (Reducing expiry-related wastage through redistribution)
+-in Emergency Preparedness and Crisis Response (Emergency plans, communication and roles in the first phase of a crisis; prehospital transfusion support)
+-in Ethical, Legal and Regulatory Frameworks (EU SoHO regulation; NATO minimum standards; regulatory basis for departures from routine; informed consent, donor autonomy, staff safety, transparent prioritisation)
+-in Blood Products and Transfusion Strategies (Prehospital transfusion; fresh whole blood; low-titre group O whole blood; cold-stored platelets; dried/freeze-dried plasma vs standard component therapy)
+-in Transfusion-Transmissible Infections and Blood Safety Screening (West Nile virus NAT donor screening; dengue and chikungunya risks; seasonal and geographically variable infectious risk)
+
+paper20 : [Scaling of prehospital blood: A model describing impact on U.S. blood donors, distribution and cost — Young et al., Transfusion, 2026]
+-in Decision Support Approaches (Quantitative feasibility framework for policymakers, EMS and hospital leaders; hybrid LTOWB–LP strategy)
+-in Simulation and Modeling Approaches (Deterministic closed-form systems-flow analytic model with utilisation, rotation, manufacturing and donor modules; 10% (~4,200) vs 50% (~21,000) EMS station deployment scenarios; geographic hybrid scenarios)
+-in Risk Category (Preventable death from traumatic haemorrhage; fragile voluntary donor base; supply shortages; regional disparities; product discard)
+-in Blood Supply and Demand Forecasting (National prehospital demand of 450,000 events (300,000 trauma, 150,000 non-trauma); 148,000–220,000 units at 10% and 741,000–1.1 million at 50% deployment; 8–24% increase over current whole-blood collections)
+-in Vehicle Routing and Distribution Optimization (EMS-to-hospital rotation of unused units; two units per vehicle)
+-in Inventory Management and Optimization (Vehicle inventory; 36% utilisation rate; 12% LTOWB and 2% LP manufacturing buffers)
+-in Application Domain (Prehospital emergency medicine; U.S. ground EMS; trauma and medical haemorrhage)
+-in Donor Management, Recruitment and Retention (About 110,000 to 550,000 new LTOWB donors needed; LP met through redistribution without new recruitment)
+-in Blood Wastage and Shelf-life Management (Discard with vs without hospital rotation; product shelf-life)
+-in Blood Products and Transfusion Strategies (Low-titre group O whole blood vs liquid plasma)
+-in Cost and Economic Evaluation (Annual product costs > $540 million for LTOWB vs ~$47 million for LP at 50% deployment; targeted investment)
+
+paper21 : [Study on the Centralization Strategy of the Blood Allocation Among Different Departments Within a Hospital — Duan et al., Journal of Systems Science and Systems Engineering, 2018]
+-in Optimization Approaches (Centralised inventory control strategy grouping hospital departments)
+-in Decision Support Approaches (Optimal allocation network scheme and optimal inventory setting per department)
+-in Quantitative Optimization (Multi-objective mixed integer programming; shortage reduced ~72%, wastage ~90%, cost ~108,540 RMB per month)
+-in Risk Category (Shortage and wastage from improper allocation; bullwhip effect from overestimated departmental requests; postponed surgeries)
+-in Risk Management Approach (Pooling departmental demand; narrowing the gap between requested and actually used blood)
+-in Blood Supply and Demand Forecasting (Historical applied vs actual blood usage; variance of monthly departmental demand)
+-in Inventory Management and Optimization (Centralised hospital blood inventory; optimal inventory levels; freshness of transfused blood)
+-in Blood Allocation and Compatibility Frameworks (Allocation of blood items among departments within a hospital)
+-in Uncertainty Quantification (Sensitivity analysis of shortage, holding and wastage cost parameters)
+-in Application Domain (Intra-hospital blood allocation, general hospital in Shanghai, China)
+-in Blood Wastage and Shelf-life Management (Wastage reduced ~90%; perishability and freshness)
+-in Cost and Economic Evaluation (Total cost of holding/purchasing, wastage and shortage)
+
+paper22 : [The blood system in Ukraine: Experience in martial law conditions — Chornenkyy et al., Transfusion, 2026]
+-in Qualitative Content Analysis (Rapid review of the Ukrainian blood system drawn from a delegation exchange seminar and national experience reports)
+-in Risk Category (Blood establishments damaged, destroyed or in occupied territories; ~40% rise in blood demand; gaps in prehospital transfusion traceability; limits on data sharing for security reasons)
+-in Risk Management Approach (Daily national stock reporting; 24-hour production and supply cycles; centralised redistribution between regions; national self-sufficiency without imports)
+-in Vehicle Routing and Distribution Optimization (Centralised production, logistics and redistribution of blood components codified into law)
+-in Inventory Management and Optimization (National whole blood and blood component inventories monitored daily)
+-in Blood Allocation and Compatibility Frameworks (O RhD-negative whole blood first, then group-compatible RBC and lyophilised plasma for military casualties)
+-in Application Domain (Civilian and military blood service under martial law (Ukraine))
+-in Quality Assurance and Performance Evaluation (Standardisation of blood establishment processes; haemovigilance; transfusion training and authorisation for defence forces personnel)
+-in Statistical and Epidemiological Data Analysis (Comparison table of national blood service indicators before and after the full-scale invasion)
+-in Donor Management, Recruitment and Retention (Donor rate 7.5 per 1,000; 44% first-time donors; 95% voluntary non-remunerated donation; "Your blood can fight" campaign; donor safety during attacks)
+-in Governance, Coordination and Collaboration Networks (Ministry of Health Operational Headquarters; SSI "Ukrainian Transplant Coordination Center" acting as the National Transfusiology Center; exchange with US partners)
+-in Emergency Preparedness and Crisis Response (Wartime resilience of the blood system; blood supply as part of national security)
+-in Ethical, Legal and Regulatory Frameworks (New national blood law; alignment with EU blood standards and the SoHO regulation)
+-in Blood Products and Transfusion Strategies (Whole blood; lyophilised plasma; lessons on cold-stored platelets; CPDA-1 whole blood storage)
+-in Transfusion-Transmissible Infections and Blood Safety Screening (Mandatory HIV, HBV, HCV and syphilis screening of donations)
+
+paper23 : [A retrospective analysis of the antigen-negative red blood cell supply conducted at a single centre in China — Zhao et al., Transfusion Medicine, 2026]
+-in Decision Support Approaches (Precision transfusion support; proposed regional sharing platform for antigen-negative units)
+-in Risk Category (Alloimmunisation from minor red cell antigens; haemolytic disease of the foetus and newborn; repeated exposure in chronically transfused patients)
+-in Risk Management Approach (Routine RhCcEe and Kidd typing; extended phenotyping and genotyping of donors; electronic crossmatch)
+-in Blood Supply and Demand Forecasting (Demand intensity by blood group (group B "double-high" 42.76% of requests / 1.41%; AB 1.08%); recipient profile, 63.25% female and 65.73% over 50 years)
+-in Digital Health Technology (Tangshan Qiao 9.5 blood management system; clinical transfusion software; proposed data-sharing platform)
+-in Inventory Management and Optimization (Dynamic inventory of antigen-negative RBC for high-demand phenotypes)
+-in Blood Allocation and Compatibility Frameworks (Antigen-negative matching by system: Rh 57.90%, Kidd 22.84%, MNS, Lewis, Diego, Duffy and P)
+-in Application Domain (Shandong Blood Center supplying 14 hospitals, China; antigen-negative RBC supply)
+-in Statistical and Epidemiological Data Analysis (Retrospective analysis 2022–2024; Excel and GraphPad Prism descriptive statistics)
+-in Governance, Coordination and Collaboration Networks (Recommended multicentre and nationwide antigen-negative donor network)
+-in Blood Products and Transfusion Strategies (Suspended, leucoreduced, washed, irradiated, frozen-thawed and antigen-negative red blood cell products)
+
+paper24 : [Transfusion Service Response to the COVID-19 Pandemic — Gehrie et al., American Journal of Clinical Pathology, 2020]
+-in Qualitative Content Analysis (Special article synthesising best practices and early experience of transfusion services)
+-in Risk Category (About 4,600 blood drives cancelled and 143,600 units lost; donor and staff exposure; concern over contamination of returned units; scarce antigen-matched units for sickle cell patients)
+-in Risk Management Approach (Shift to fixed donation sites; social distancing; disinfection; bagging units in plastic; converting sickle cell exchange to simple transfusion; deferring non-urgent apheresis)
+-in Blood Supply and Demand Forecasting (Monitoring RBC utilisation and massive transfusion protocol activation to rebalance supply and demand)
+-in Inventory Management and Optimization (Bringing COVID-19 convalescent plasma into hospital inventory)
+-in Application Domain (US hospital transfusion services and apheresis services during the COVID-19 pandemic)
+-in Donor Management, Recruitment and Retention (Community mobilisation of donors after drive cancellations)
+-in Governance, Coordination and Collaboration Networks (Coordination between blood suppliers and hospital transfusion services)
+-in Emergency Preparedness and Crisis Response (Pandemic preparedness plans for transfusion services)
+-in Ethical, Legal and Regulatory Frameworks (FDA April 2020 donor deferral changes (MSM 12→3 months, tattoo, malaria, vCJD); EUA for the Depuro D2000 device; clinical trial frameworks)
+-in Blood Products and Transfusion Strategies (Convalescent plasma; therapeutic plasma exchange; photopheresis; red cell exchange)
+-in Transfusion-Transmissible Infections and Blood Safety Screening (SARS-CoV-2 not shown to be transfusion-transmitted; no donor screening test required)
+
+paper25 : [Transfusion-Transmissible Infections (TTIs) among blood donors in Ethiopia's Tigray region: 2020–2023 — Demoz et al., Journal of Health, Population and Nutrition, 2026]
+-in Risk Category (TTI burden in donated blood; disruption from armed conflict and COVID-19; inconsistent screening during the war)
+-in Risk Management Approach (Continued mandatory screening; stricter donor selection; improved data collection)
+-in Application Domain (Tigray Regional Blood Bank, Mekelle, Ethiopia; donated blood safety in a conflict-affected region)
+-in Quality Assurance and Performance Evaluation (ELISA internal validation with positive/negative controls and duplicate testing)
+-in Statistical and Epidemiological Data Analysis (Retrospective review of 35,034 donations; Shapiro–Wilk normality, one-way ANOVA and Kruskal–Wallis tests; STATA; comparison before, during and after the war)
+-in Donor Management, Recruitment and Retention (Donors mostly male and aged 18–34; A+ 22.9%; decline in donations after the war)
+-in Transfusion-Transmissible Infections and Blood Safety Screening (HIV 0.257%, HBV 3.157%, HCV 0.11%, syphilis 1.33%, overall 4.33%; Bio-Rad iMark ELISA screening)
+
+paper26 : [Using geographic information system (GIS) technology to evaluate a hospital-based mobile blood donation program — Ruby et al., Transfusion, 2025]
+-in Decision Support Approaches (Identifying high-performing and never-visited locations to plan future bloodmobile drives)
+-in Blood Bank Location and Selection Optimization (Selecting optimal drive towns: 17 towns within 15 miles never visited; 33 towns with over 700,000 adults; future location-allocation analysis)
+-in Digital Health Technology (LifeTrak blood establishment software; Crystal Reports; SQL data extraction)
+-in Application Domain (Hospital-based mobile blood donation programme, Massachusetts General Hospital, Boston)
+-in Statistical and Epidemiological Data Analysis (Retrospective 2021–2023 analysis of 16,009 donations, 455 drives and 189 locations; medians and IQR)
+-in Donor Management, Recruitment and Retention (Drive activity, sponsor types and donors per drive at mobile sites)
+-in Geospatial Analysis and GIS (ArcGIS Pro/Online; geocoding of drive locations; vector and choropleth maps; buffer, clip and select-by-location analysis; census data joins; blood deserts)
+
+paper27 : [Analysis of the Management of Blood Product Supply, Processing, and Distribution System at the Kerman Blood Transfusion Center — Nekoei Moghadam et al., Journal of Iranian Blood Transfusion, 2025]
+-in Qualitative Content Analysis (Purposive and snowball sampling; semi-structured interviews with saturation at the 10th interview; coding of themes; focus-group consensus)
+-in Qualitative Framework (Three-domain framework of supply, processing and distribution management)
+-in Risk Category (Cultural factors, beliefs, new social phenomena and economic issues reducing donation; outdated equipment; staff shortages; low awareness among clinical staff)
+-in Risk Management Approach (Corrective solutions per domain; information and policy-level support; human resource recruitment)
+-in Application Domain (Kerman Blood Transfusion Center, Iran; blood product supply chain management)
+-in Donor Management, Recruitment and Retention (Cultural and social barriers to blood donation)
+-in Governance, Coordination and Collaboration Networks (Iranian Blood Transfusion Organization long-term policymaking)
+
+paper28 : [Blood Bank Management System with Emergency Blood Locator — Kaur et al., IJRASET, 2023]
+-in Decision Support Approaches (GPS-based search for nearby blood sources in emergencies)
+-in Risk Category (Delayed access to blood in emergencies; required blood group not available)
+-in Digital Health Technology (Xamarin Android/iOS app in C# with SQL and REST API; GPS location; blood requests; ambulance and insurance services; donation certificate by email; shortage messages)
+-in Application Domain (Emergency blood location and blood bank management, India)
+-in Donor Management, Recruitment and Retention (Eligibility questionnaire; digital donor card; donation history)
+-in Data Security, Privacy and Integrity (Login validation; session destruction on logout)
+
+paper29 : [Blood Bank Management System (Django-based) — Chandrashekar et al., IJRPR, 2025]
+-in Decision Support Approaches (Reports and analytics dashboards; compatible blood type search)
+-in Risk Category (Human error; shortages; expiry; poor coordination; data breaches)
+-in Risk Management Approach (Input validation; duplicate prevention; audit trails; backups)
+-in Blood Supply and Demand Forecasting (Demand and supply trend analysis; planned demand forecasting module)
+-in Digital Health Technology (Django 5.1 / Django REST Framework; SQLite/PostgreSQL; Bootstrap; Chart.js; Leaflet/OpenStreetMap; SMS and email alerts; appointment scheduling; geolocation alerts; integration with hospital management systems and registries; roadmap of blockchain, AI matching and gamification)
+-in Inventory Management and Optimization (Real-time inventory; expiry tracking)
+-in Blood Allocation and Compatibility Frameworks (Automated donor–recipient compatibility matching)
+-in Application Domain (Blood bank and donation management)
+-in Data Security, Privacy and Integrity (Role-based access via django-allauth; HTTPS and token authentication; encryption; GDPR, DPDPA and HIPAA compliance; audit logs; QR-code traceability)
+-in Donor Management, Recruitment and Retention (Eligibility checks; donation reminders; donor retention)
+-in Blood Wastage and Shelf-life Management (Near-expiry alerts)
+
+paper30 : [Blood bank trends in Kuwait: five-year analysis of donations and investigations — Almuaili et al., Frontiers in Public Health, 2025]
+-in Risk Category (Over 85% male donors; RhD-negative only 8.6%; FFP wastage; COVID-19 dip in donations; alloimmunisation and HDFN)
+-in Risk Management Approach (Recruiting female donors; obstetric planning for RhD-negative supply; interhospital redistribution; performance indicators)
+-in Blood Supply and Demand Forecasting (Donation trends of about 77,000–86,000 per year; ABO/RhD distribution (O+ 38.7%, B+ 23.7%, A+ 22.3%); laboratory workload trends)
+-in Inventory Management and Optimization (National stock of components across hospitals)
+-in Blood Allocation and Compatibility Frameworks (Alloantibody profile (Rh, Kell, Kidd, MNS, P1PK); antenatal antibody positivity 3.8%; anti-D and anti-K)
+-in Application Domain (Kuwait Central Blood Bank; national donation and immunohaematology services)
+-in Quality Assurance and Performance Evaluation (Blood bank performance indicators)
+-in Statistical and Epidemiological Data Analysis (Retrospective review of 2019–2023 annual reports; GraphPad descriptive statistics; rates per 100,000)
+-in Donor Management, Recruitment and Retention (Donor demographics and gender gap)
+-in Blood Wastage and Shelf-life Management (Discard of LR-RBC, FFP and platelets; FFP highest wastage)
+-in Governance, Coordination and Collaboration Networks (Centralised national blood bank under the Ministry of Health)
+-in Transfusion-Transmissible Infections and Blood Safety Screening (NAT reactivity HBV 0.06–0.11%, HCV 0.03–0.08%, HIV 0.02–0.05%)
+
+paper31 : [Blood Bond — Singh & Patel, IJSREM, 2025]
+-in Decision Support Approaches (Scheduling donation camps in high-risk zones; pre-stocking ahead of demand)
+-in Simulation and Modeling Approaches (Random Forest regression demand model)
+-in Quantitative Optimization (MAE, RMSE and R² evaluation; GridSearchCV hyperparameter tuning; 80/20 train–test split)
+-in Blood Supply and Demand Forecasting (City-wise and blood-group-wise monthly demand from population, accident rates, group distribution and seasonality)
+-in Risk Category (Shortage and wastage; scarcity of reliable data)
+-in Digital Health Technology (Flask REST API; React dashboard; joblib model serving; donor, hospital and agency management)
+-in Inventory Management and Optimization (Stock planning against forecast demand)
+-in Application Domain (Blood demand forecasting and donation management, India and LMICs)
+-in Machine Learning and Artificial Intelligence Techniques (Random Forest; scikit-learn ColumnTransformer pipeline; feature engineering)
+-in Donor Management, Recruitment and Retention (Donor registration and outreach through the platform)
+
+paper32 : [Blood Donation Management System — Anandan & Velraj, IJSREM, 2025]
+-in Decision Support Approaches (Donor search by blood group and location)
+-in Risk Category (Paper records; outdated contact details; 30–60 minute delays to find donors; no real-time eligibility check)
+-in Digital Health Technology (Three-tier PHP/MySQL/HTML/CSS/JavaScript web system on XAMPP; donor, recipient and admin modules; black-box and white-box testing)
+-in Inventory Management and Optimization (Blood group availability records)
+-in Application Domain (Blood donation management)
+-in Donor Management, Recruitment and Retention (Donor registration; eligibility based on last donation date)
+-in Data Security, Privacy and Integrity (Secure authentication; privacy-first consent and data minimisation)
+
+paper33 : [Blood Donation Pattern and Characteristics of Blood Donors in Saudi Arabia — Alateiq et al., European Journal of Medical and Health Research, 2024]
+-in Risk Category (Donation rate 13.8 per 1,000; only 39.7% voluntary donors; gender disparity; low repeat donation)
+-in Risk Management Approach (Recommendations to grow voluntary and repeat donation)
+-in Blood Supply and Demand Forecasting (Temporal trends 2019–2022; Ramadan, seasonal and monthly comparisons (p > 0.1); regional variation)
+-in Digital Health Technology (Wateen Ministry of Health app: donation requests, nearby banks with shortages, reminders, donor records, COVID-19 movement permits)
+-in Application Domain (National blood donation in Saudi Arabia)
+-in Statistical and Epidemiological Data Analysis (Cross-sectional analysis of 1,320,900 donations; Power BI; mean, SD and 95% CI)
+-in Donor Management, Recruitment and Retention (Male 97.39%; aged 25–35 years 81.93%; 48.53% donated once; O+ 48.53%; Eastern Province 18.59%)
+
+paper34 : [Blood donation projections using hierarchical time series forecasting: the case of Zimbabwe's national blood bank — Chideme et al., BMC Public Health, 2024]
+-in Decision Support Approaches (Forecasts to support collection planning and donor targeting)
+-in Simulation and Modeling Approaches (Hierarchical time series with top-down, bottom-up and optimal combination reconciliation using ARIMA and ETS)
+-in Quantitative Optimization (MAPE 11.30 for the best model (TDFP-ARIMA); 2019 validation MAPE 14.80; 2020 MAPE 84.06)
+-in Risk Category (Group O shortages in holidays; declining donor numbers; COVID-19 shock)
+-in Risk Management Approach (Donor retention interventions; more robust forecasting models)
+-in Blood Supply and Demand Forecasting (Monthly donations 2007–2018 by gender and ABO group; forecasts for 2019–2023)
+-in Inventory Management and Optimization (Planning blood stock by group)
+-in Uncertainty Quantification (Out-of-sample validation; forecast error during the pandemic)
+-in Application Domain (National Blood Service Zimbabwe)
+-in Donor Management, Recruitment and Retention (Donor supply by gender and blood group)
+
+paper35 : [Blood shortages planning in Canada: The National Emergency Blood Management Committee experience during the first 6 months of the COVID-19 pandemic — Prokopchuk-Gauk et al., Transfusion, 2021 (provided as an untitled upload)]
+-in Qualitative Content Analysis (Commentary describing the national committee experience)
+-in Qualitative Framework (National Plan phases: Green, Green Phase Advisory, Amber, Red and Recovery; Emergency Rationing Framework)
+-in Decision Support Approaches (NEBMC consensus decisions; phase declaration; clinical guidance statements)
+-in Risk Category (Donor attendance down 20%; 40% of mobile collections cancelled; collections down 25%; spike in RBC outdates)
+-in Risk Management Approach (Green Phase Advisory; restrictive transfusion and patient blood management; Choosing Wisely; daily inventory reporting; product diversion)
+-in Blood Supply and Demand Forecasting (Projections from historical issues; average daily red cell demand; demand nadir of 36%)
+-in Digital Health Technology (Electronic hospital inventory reporting)
+-in Inventory Management and Optimization (Days on Hand metric; hospital inventories 12–22% below baseline)
+-in Vehicle Routing and Distribution Optimization (Diversion and redistribution of products between hospitals and regions)
+-in Blood Allocation and Compatibility Frameworks (Red Phase rationing for massive bleeding)
+-in Application Domain (Canadian Blood Services national blood system during COVID-19)
+-in Donor Management, Recruitment and Retention (Donor engagement; Prime Minister's announcement; extended clinic hours; PPE for donors)
+-in Blood Wastage and Shelf-life Management (April–May 2020 RBC outdates after demand fell)
+-in Governance, Coordination and Collaboration Networks (National Advisory Committee; NEBMC with about 50 members; Provincial Emergency Blood Management Committees; Provincial/Territorial Ministries of Health)
+-in Emergency Preparedness and Crisis Response (Business Continuity Plans and Pandemic Plans)
+
+paper36 : [Delivery time and wastage of red blood cell units in a Swiss transfusion network: a 5-year retrospective study — Duarte et al., Blood Transfusion, 2026]
+-in Risk Category (Storage lesions in older units; AB expiry; paediatric split unit wastage 36.6%)
+-in Risk Management Approach (Automated alerts; redistribution of near-expiry units; just-in-time paediatric splitting)
+-in Blood Supply and Demand Forecasting (Better demand forecasting for paediatric splits)
+-in Vehicle Routing and Distribution Optimization (Delivery time by canton and hospital type; delivery routes; on-demand issue; inter-service exchange)
+-in Inventory Management and Optimization (FIFO policy with at least 2 weeks remaining shelf life)
+-in Blood Allocation and Compatibility Frameworks (AB inventory paradox; 12.5% of AB+ units delivered after 35 days)
+-in Application Domain (Interregional Blood Transfusion network (Vaud, Valais, Bern), Switzerland)
+-in Quality Assurance and Performance Evaluation (Production rejections)
+-in Statistical and Epidemiological Data Analysis (312,340 records, 2019–2023; R; Kruskal–Wallis, Wilcoxon and chi-square tests; COVID-19 period comparisons)
+-in Blood Wastage and Shelf-life Management (Discard 3.3%; mean storage age at delivery 15.4 days; 42- to 49-day licensed shelf life)
+-in Blood Products and Transfusion Strategies (Top-Top PAGGSM 49-day vs Top-Bottom SAGM 42-day RBC; irradiated, washed and paediatric split units)
+
+paper37 : [Designing an efficient blood supply chain network in crisis: neural learning, optimization and case study — Khalilpourazari et al., Annals of Operations Research, 2019]
+-in Optimization Approaches (Multi-objective mixed integer linear programming; Lexicographic Weighted Tchebycheff method; Pareto solutions)
+-in Decision Support Approaches (Managerial insights: Tehran permanent centres, IBTO north centre, Shohada hospital)
+-in Simulation and Modeling Approaches (Simulation combined with optimisation)
+-in Risk Category (Earthquake demand surge; Bam 2003 where only 1.3% of units reached the area within 4 days; limited hospital capacity)
+-in Risk Management Approach (Helicopter transport; returning injured to other hospitals; optimal transport fleet)
+-in Quantitative Optimization (Minimise transport time, cost and unfulfilled demand)
+-in Vehicle Routing and Distribution Optimization (Ambulance and helicopter transport with limited capacity)
+-in Blood Bank Location and Selection Optimization (Permanent and temporary blood collection centres)
+-in Application Domain (Kermanshah 2017 earthquake, Iran)
+-in Machine Learning and Artificial Intelligence Techniques (Neural learning from past disaster experience)
+-in Emergency Preparedness and Crisis Response (Disaster and humanitarian relief blood supply)
+-in Blood Supply Chain Network Design (Six-echelon blood supply chain network)
+-in Cost and Economic Evaluation (Transport cost)
+
+paper38 : [Creating a plasma coordination center to support COVID-19 outpatient trials across a national network of hospital blood banks — Yarava et al., Journal of Clinical and Translational Science, 2024]
+-in Decision Support Approaches (Qualification, randomisation and shipment decisions using digital inventory transparency)
+-in Risk Category (Local supply constraints; CCP inventory shortfalls; regulatory and blinding complexity)
+-in Risk Management Approach (Inventory thresholds; decentralised procurement)
+-in Digital Health Technology (FDA-compliant cloud platform for randomisation and inventory tracking)
+-in Vehicle Routing and Distribution Optimization (Overnight shipments from 29 collection centres to 26 sites; over 3,100 units)
+-in Inventory Management and Optimization (Investigational plasma inventory thresholds)
+-in Blood Allocation and Compatibility Frameworks (ABO-compatible plasma allocation)
+-in Application Domain (Outpatient COVID-19 convalescent plasma RCTs; 1,351 transfusions in 16 months)
+-in Governance, Coordination and Collaboration Networks (Investigational drug services model; Convalescent Plasma Coordination Centre; national hospital network)
+-in Emergency Preparedness and Crisis Response (Template for future emergencies such as avian influenza)
+-in Ethical, Legal and Regulatory Frameworks (IND and FDA requirements; blinding; trial safety)
+-in Blood Products and Transfusion Strategies (High-titre COVID-19 convalescent plasma vs control plasma)
+
+paper39 : [E-Blood Banking System Using Cloud Computing — Kandukuri et al., IJRASET, 2023]
+-in Qualitative Content Analysis (Exploratory literature review; comparison of American Red Cross, Blood Bank India and e-RaktKosh)
+-in Risk Category (Blood shortages; no centralised system; COVID-19 challenges; unverified donors)
+-in Risk Management Approach (Verifying legitimacy of blood requests; low-supply alerts)
+-in Digital Health Technology (Arogini system (HTML/PHP/MySQL); cloud IaaS; registration, request and admin modules; nearest blood bank search)
+-in Inventory Management and Optimization (Minimum quantities per blood group; bag expiry dates)
+-in Blood Allocation and Compatibility Frameworks (Blood group compatibility table)
+-in Application Domain (Cloud-based e-blood banking, India)
+-in Donor Management, Recruitment and Retention (Verified vs non-verified donors; community education)
+-in Data Security, Privacy and Integrity (Donor confidentiality)
+-in Cost and Economic Evaluation (Economic feasibility; pay-per-use cloud costs)
+
+paper40 : [Electronic transfusion consent and blood delivering pattern improve the management of blood bank in China — Jiang et al., BMC Health Services Research, 2022]
+-in Optimization Approaches (Process optimisation of consent and blood delivery)
+-in Risk Category (Transfusion errors (84.1% in SHOT reports); inaccurate consent forms; loss of temperature control during transport)
+-in Risk Management Approach (Automatic checking; temperature-controlled transport boxes; full-time transport nurses)
+-in Digital Health Technology (CA-certified electronic signature; transfusion management system integrated with HIS; personalised consent text)
+-in Vehicle Routing and Distribution Optimization (Blood transport centre; batch delivery)
+-in Application Domain (3,000-bed tertiary hospital, Zhejiang, China)
+-in Quality Assurance and Performance Evaluation (Consent accuracy reached 100%)
+-in Statistical and Epidemiological Data Analysis (Pre/post comparison June–December 2019; 95% CI (26 min shorter in ED; 7.24 min longer temperature control))
+-in Cost and Economic Evaluation (Labour cost reduced by $3.67 per unit)
+-in Ethical, Legal and Regulatory Frameworks (Informed consent for transfusion; SaBTO guidance; Chinese Technical Specifications for clinical transfusion)
+
+paper41 : [Engineering data-driven forecasting models for intelligent blood inventory decision-support in healthcare systems — Shruthi et al., Discover Applied Sciences, 2026]
+-in Decision Support Approaches (Forecast-driven blood inventory decision support)
+-in Simulation and Modeling Approaches (SARIMA and Prophet models; multi-resolution seasonality s = 7/52/12)
+-in Quantitative Optimization (MAE A 11.46, B 10.52, AB 3.00, O 20.02; RMSE and MAPE)
+-in Risk Category (Dual supply and demand uncertainty; seasonality; post-pandemic shifts; short platelet shelf life)
+-in Blood Supply and Demand Forecasting (Daily donations 2021–2023 per blood group)
+-in Inventory Management and Optimization (Supply-side visibility for inventory planning)
+-in Uncertainty Quantification (Rolling-origin backtesting; prediction intervals)
+-in Application Domain (Tertiary hospital in Coastal Karnataka, India; sustainable supply chain management)
+-in Statistical and Epidemiological Data Analysis (Kruskal–Wallis seasonality tests; donor profile 93.41% male)
+-in Machine Learning and Artificial Intelligence Techniques (XGBoost; LSTM; hybrid ensemble of SARIMA, Prophet and LSTM with inverse-variance weighting)
+-in Donor Management, Recruitment and Retention (Donor demographics and donation patterns)

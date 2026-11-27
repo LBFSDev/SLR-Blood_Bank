@@ -1,0 +1,292 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Research Dimensions Tree</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: one wide left-to-right tree (root > category > dimension), then a two-column reference of sub-dimensions */
+:root {
+  --bg:#f6f7fa; --surface:#ffffff; --fg:#1b1f2a; --muted:#5d6475; --line:#dde1ea; --on-fg:#ffffff; --on-fg-2:#c9cedb;
+  --c1:#2f64b0; --c2:#6a4bb5; --c3:#17806a; --c4:#bf3a30; --c5:#c46a12; --c6:#a8367f; --c7:#7f6a14; --c8:#55606f;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-head: "Space Grotesk", "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#11141b; --surface:#181c25; --fg:#e7e9f0; --muted:#9aa1b2; --line:#2a303d; --on-fg:#11141b; --on-fg-2:#454c5c;
+  --c1:#78a6ec; --c2:#a68fe6; --c3:#4cc3a0; --c4:#f07a6e; --c5:#f0a45a; --c6:#e37fbf; --c7:#d4bb5a; --c8:#9eabbb;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg:#11141b; --surface:#181c25; --fg:#e7e9f0; --muted:#9aa1b2; --line:#2a303d; --on-fg:#11141b; --on-fg-2:#454c5c;
+  --c1:#78a6ec; --c2:#a68fe6; --c3:#4cc3a0; --c4:#f07a6e; --c5:#f0a45a; --c6:#e37fbf; --c7:#d4bb5a; --c8:#9eabbb;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 36px; }
+header { display: grid; gap: 8px; max-width: 70ch; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--c4); margin: 0; }
+h1 { font-family: var(--font-head); font-weight: 600; font-size: clamp(28px, 4vw, 40px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; display: grid; gap: 0; }
+.scroll { overflow-x: auto; padding: 12px; }
+.tree { display: block; width: 100%; min-width: 980px; height: auto; font-family: var(--font-body); }
+figcaption { border-top: 1px solid var(--line); padding: 12px 18px; font-size: 13px; color: var(--muted); }
+.k1 { --k: var(--c1); } .k2 { --k: var(--c2); } .k3 { --k: var(--c3); } .k4 { --k: var(--c4); }
+.k5 { --k: var(--c5); } .k6 { --k: var(--c6); } .k7 { --k: var(--c7); } .k8 { --k: var(--c8); }
+.tree .lk { fill: none; stroke: var(--k); stroke-opacity: .6; stroke-width: 1.6; }
+.tree .lk2 { fill: none; stroke: var(--k); stroke-opacity: .45; stroke-width: 1.2; }
+.tree .cat { fill: color-mix(in srgb, var(--k) 11%, var(--surface)); stroke: var(--k); stroke-width: 1.4; }
+.tree .badge { fill: var(--k); }
+.tree .badge-t { fill: var(--surface); font-size: 12px; font-weight: 700; }
+.tree .cat-t { fill: var(--fg); font-size: 13px; font-weight: 600; }
+.tree .cnt { fill: var(--k); font-size: 12px; font-weight: 600; }
+.tree .dot { fill: var(--k); }
+.tree .code { fill: var(--muted); font-size: 11.5px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.tree .dim { fill: var(--fg); font-size: 13px; }
+.tree .root { fill: var(--fg); }
+.tree .root-t { fill: var(--on-fg); font-size: 15px; font-weight: 700; }
+.tree .root-s { fill: var(--on-fg-2); font-size: 11.5px; font-weight: 500; }
+.tree .grp { transition: opacity .15s ease; }
+.tree:has(.grp:hover) .grp:not(:hover) { opacity: .22; }
+@media (prefers-reduced-motion: reduce) { .tree .grp { transition: none; } }
+.ref { display: grid; gap: 16px; }
+h2 { font-family: var(--font-head); font-weight: 600; font-size: 22px; margin: 0; }
+.ref > p { margin: 0; color: var(--muted); max-width: 70ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 16px; align-items: start; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 12px; min-width: 0; }
+.card h3 { margin: 0; font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 10px; text-wrap: balance; }
+.card .b { flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--k); color: var(--surface); font-size: 12px; font-weight: 700; display: grid; place-items: center; }
+.card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.card li { display: grid; grid-template-columns: 30px 1fr; gap: 4px; padding-top: 10px; border-top: 1px solid var(--line); }
+.card li .code { font-size: 12px; font-weight: 600; color: var(--k); font-variant-numeric: tabular-nums; padding-top: 1px; }
+.card h4 { margin: 0; font-size: 14px; font-weight: 600; }
+.card li p { margin: 2px 0 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+</style>
+<main class="wrap">
+  <header>
+    <p class="eyebrow">Literature review taxonomy</p>
+    <h1>Research Dimensions Tree</h1>
+    <p class="lede">The 34 dimensions used to classify the blood supply chain and blood bank management papers, grouped into 8 categories. Codes match Dimensions_taxonomy.txt.</p>
+  </header>
+  <figure>
+    <div class="scroll">
+<svg class="tree" viewBox="0 0 1197 1011" role="img" aria-label="Tree of 8 categories branching into 34 research dimensions for blood supply chain and blood bank management research" xmlns="http://www.w3.org/2000/svg">
+<g class="grp k1">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 90.5 276.0 90.5"/>
+<path class="lk2" d="M680.0 90.5C706.0 90.5 706.0 28.0 732.0 28.0"/>
+<path class="lk2" d="M680.0 90.5C706.0 90.5 706.0 53.0 732.0 53.0"/>
+<path class="lk2" d="M680.0 90.5C706.0 90.5 706.0 78.0 732.0 78.0"/>
+<path class="lk2" d="M680.0 90.5C706.0 90.5 706.0 103.0 732.0 103.0"/>
+<path class="lk2" d="M680.0 90.5C706.0 90.5 706.0 128.0 732.0 128.0"/>
+<path class="lk2" d="M680.0 90.5C706.0 90.5 706.0 153.0 732.0 153.0"/>
+<rect class="cat" x="276" y="74.5" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="90.5" r="11.0"/>
+<text class="badge-t" x="299.0" y="90.5" text-anchor="middle" dominant-baseline="central">1</text>
+<text class="cat-t" x="320" y="90.5" dominant-baseline="central">Research Design and Analytical Methods</text>
+<text class="cnt" x="668" y="90.5" text-anchor="end" dominant-baseline="central">6</text>
+<circle class="dot" cx="736" cy="28" r="3.6"/>
+<text class="code" x="747" y="28" dominant-baseline="central">1.1</text>
+<text class="dim" x="777" y="28" dominant-baseline="central">Scientometric Mapping</text>
+<circle class="dot" cx="736" cy="53" r="3.6"/>
+<text class="code" x="747" y="53" dominant-baseline="central">1.2</text>
+<text class="dim" x="777" y="53" dominant-baseline="central">Qualitative Content Analysis</text>
+<circle class="dot" cx="736" cy="78" r="3.6"/>
+<text class="code" x="747" y="78" dominant-baseline="central">1.3</text>
+<text class="dim" x="777" y="78" dominant-baseline="central">Qualitative Framework</text>
+<circle class="dot" cx="736" cy="103" r="3.6"/>
+<text class="code" x="747" y="103" dominant-baseline="central">1.4</text>
+<text class="dim" x="777" y="103" dominant-baseline="central">Statistical and Epidemiological Data Analysis</text>
+<circle class="dot" cx="736" cy="128" r="3.6"/>
+<text class="code" x="747" y="128" dominant-baseline="central">1.5</text>
+<text class="dim" x="777" y="128" dominant-baseline="central">Network Analysis Approaches</text>
+<circle class="dot" cx="736" cy="153" r="3.6"/>
+<text class="code" x="747" y="153" dominant-baseline="central">1.6</text>
+<text class="dim" x="777" y="153" dominant-baseline="central">Geospatial Analysis and GIS</text>
+</g>
+<g class="grp k2">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 271.0 276.0 271.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 196.0 732.0 196.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 221.0 732.0 221.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 246.0 732.0 246.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 271.0 732.0 271.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 296.0 732.0 296.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 321.0 732.0 321.0"/>
+<path class="lk2" d="M680.0 271.0C706.0 271.0 706.0 346.0 732.0 346.0"/>
+<rect class="cat" x="276" y="255.0" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="271.0" r="11.0"/>
+<text class="badge-t" x="299.0" y="271.0" text-anchor="middle" dominant-baseline="central">2</text>
+<text class="cat-t" x="320" y="271.0" dominant-baseline="central">Optimization, Modelling and Intelligent Techniques</text>
+<text class="cnt" x="668" y="271.0" text-anchor="end" dominant-baseline="central">7</text>
+<circle class="dot" cx="736" cy="196" r="3.6"/>
+<text class="code" x="747" y="196" dominant-baseline="central">2.1</text>
+<text class="dim" x="777" y="196" dominant-baseline="central">Optimization Approaches</text>
+<circle class="dot" cx="736" cy="221" r="3.6"/>
+<text class="code" x="747" y="221" dominant-baseline="central">2.2</text>
+<text class="dim" x="777" y="221" dominant-baseline="central">Quantitative Optimization</text>
+<circle class="dot" cx="736" cy="246" r="3.6"/>
+<text class="code" x="747" y="246" dominant-baseline="central">2.3</text>
+<text class="dim" x="777" y="246" dominant-baseline="central">Hybrid Optimization Algorithms / Metaheuristics</text>
+<circle class="dot" cx="736" cy="271" r="3.6"/>
+<text class="code" x="747" y="271" dominant-baseline="central">2.4</text>
+<text class="dim" x="777" y="271" dominant-baseline="central">Simulation and Modeling Approaches</text>
+<circle class="dot" cx="736" cy="296" r="3.6"/>
+<text class="code" x="747" y="296" dominant-baseline="central">2.5</text>
+<text class="dim" x="777" y="296" dominant-baseline="central">Uncertainty Quantification</text>
+<circle class="dot" cx="736" cy="321" r="3.6"/>
+<text class="code" x="747" y="321" dominant-baseline="central">2.6</text>
+<text class="dim" x="777" y="321" dominant-baseline="central">Machine Learning and Artificial Intelligence Techniques</text>
+<circle class="dot" cx="736" cy="346" r="3.6"/>
+<text class="code" x="747" y="346" dominant-baseline="central">2.7</text>
+<text class="dim" x="777" y="346" dominant-baseline="central">Decision Support Approaches</text>
+</g>
+<g class="grp k3">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 476.5 276.0 476.5"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 389.0 732.0 389.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 414.0 732.0 414.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 439.0 732.0 439.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 464.0 732.0 464.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 489.0 732.0 489.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 514.0 732.0 514.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 539.0 732.0 539.0"/>
+<path class="lk2" d="M680.0 476.5C706.0 476.5 706.0 564.0 732.0 564.0"/>
+<rect class="cat" x="276" y="460.5" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="476.5" r="11.0"/>
+<text class="badge-t" x="299.0" y="476.5" text-anchor="middle" dominant-baseline="central">3</text>
+<text class="cat-t" x="320" y="476.5" dominant-baseline="central">Blood Supply Chain Planning and Operations</text>
+<text class="cnt" x="668" y="476.5" text-anchor="end" dominant-baseline="central">8</text>
+<circle class="dot" cx="736" cy="389" r="3.6"/>
+<text class="code" x="747" y="389" dominant-baseline="central">3.1</text>
+<text class="dim" x="777" y="389" dominant-baseline="central">Blood Supply Chain Network Design</text>
+<circle class="dot" cx="736" cy="414" r="3.6"/>
+<text class="code" x="747" y="414" dominant-baseline="central">3.2</text>
+<text class="dim" x="777" y="414" dominant-baseline="central">Blood Bank Location and Selection Optimization</text>
+<circle class="dot" cx="736" cy="439" r="3.6"/>
+<text class="code" x="747" y="439" dominant-baseline="central">3.3</text>
+<text class="dim" x="777" y="439" dominant-baseline="central">Blood Supply and Demand Forecasting</text>
+<circle class="dot" cx="736" cy="464" r="3.6"/>
+<text class="code" x="747" y="464" dominant-baseline="central">3.4</text>
+<text class="dim" x="777" y="464" dominant-baseline="central">Donor Management, Recruitment and Retention</text>
+<circle class="dot" cx="736" cy="489" r="3.6"/>
+<text class="code" x="747" y="489" dominant-baseline="central">3.5</text>
+<text class="dim" x="777" y="489" dominant-baseline="central">Inventory Management and Optimization</text>
+<circle class="dot" cx="736" cy="514" r="3.6"/>
+<text class="code" x="747" y="514" dominant-baseline="central">3.6</text>
+<text class="dim" x="777" y="514" dominant-baseline="central">Vehicle Routing and Distribution Optimization</text>
+<circle class="dot" cx="736" cy="539" r="3.6"/>
+<text class="code" x="747" y="539" dominant-baseline="central">3.7</text>
+<text class="dim" x="777" y="539" dominant-baseline="central">Blood Allocation and Compatibility Frameworks</text>
+<circle class="dot" cx="736" cy="564" r="3.6"/>
+<text class="code" x="747" y="564" dominant-baseline="central">3.8</text>
+<text class="dim" x="777" y="564" dominant-baseline="central">Blood Wastage and Shelf-life Management</text>
+</g>
+<g class="grp k4">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 632.0 276.0 632.0"/>
+<path class="lk2" d="M680.0 632.0C706.0 632.0 706.0 607.0 732.0 607.0"/>
+<path class="lk2" d="M680.0 632.0C706.0 632.0 706.0 632.0 732.0 632.0"/>
+<path class="lk2" d="M680.0 632.0C706.0 632.0 706.0 657.0 732.0 657.0"/>
+<rect class="cat" x="276" y="616.0" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="632.0" r="11.0"/>
+<text class="badge-t" x="299.0" y="632.0" text-anchor="middle" dominant-baseline="central">4</text>
+<text class="cat-t" x="320" y="632.0" dominant-baseline="central">Blood Products, Safety and Quality</text>
+<text class="cnt" x="668" y="632.0" text-anchor="end" dominant-baseline="central">3</text>
+<circle class="dot" cx="736" cy="607" r="3.6"/>
+<text class="code" x="747" y="607" dominant-baseline="central">4.1</text>
+<text class="dim" x="777" y="607" dominant-baseline="central">Blood Products and Transfusion Strategies</text>
+<circle class="dot" cx="736" cy="632" r="3.6"/>
+<text class="code" x="747" y="632" dominant-baseline="central">4.2</text>
+<text class="dim" x="777" y="632" dominant-baseline="central">Transfusion-Transmissible Infections and Blood Safety Screening</text>
+<circle class="dot" cx="736" cy="657" r="3.6"/>
+<text class="code" x="747" y="657" dominant-baseline="central">4.3</text>
+<text class="dim" x="777" y="657" dominant-baseline="central">Quality Assurance and Performance Evaluation</text>
+</g>
+<g class="grp k5">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 725.0 276.0 725.0"/>
+<path class="lk2" d="M680.0 725.0C706.0 725.0 706.0 700.0 732.0 700.0"/>
+<path class="lk2" d="M680.0 725.0C706.0 725.0 706.0 725.0 732.0 725.0"/>
+<path class="lk2" d="M680.0 725.0C706.0 725.0 706.0 750.0 732.0 750.0"/>
+<rect class="cat" x="276" y="709.0" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="725.0" r="11.0"/>
+<text class="badge-t" x="299.0" y="725.0" text-anchor="middle" dominant-baseline="central">5</text>
+<text class="cat-t" x="320" y="725.0" dominant-baseline="central">Risk, Resilience and Emergency Management</text>
+<text class="cnt" x="668" y="725.0" text-anchor="end" dominant-baseline="central">3</text>
+<circle class="dot" cx="736" cy="700" r="3.6"/>
+<text class="code" x="747" y="700" dominant-baseline="central">5.1</text>
+<text class="dim" x="777" y="700" dominant-baseline="central">Risk Category</text>
+<circle class="dot" cx="736" cy="725" r="3.6"/>
+<text class="code" x="747" y="725" dominant-baseline="central">5.2</text>
+<text class="dim" x="777" y="725" dominant-baseline="central">Risk Management Approach</text>
+<circle class="dot" cx="736" cy="750" r="3.6"/>
+<text class="code" x="747" y="750" dominant-baseline="central">5.3</text>
+<text class="dim" x="777" y="750" dominant-baseline="central">Emergency Preparedness and Crisis Response</text>
+</g>
+<g class="grp k6">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 818.0 276.0 818.0"/>
+<path class="lk2" d="M680.0 818.0C706.0 818.0 706.0 793.0 732.0 793.0"/>
+<path class="lk2" d="M680.0 818.0C706.0 818.0 706.0 818.0 732.0 818.0"/>
+<path class="lk2" d="M680.0 818.0C706.0 818.0 706.0 843.0 732.0 843.0"/>
+<rect class="cat" x="276" y="802.0" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="818.0" r="11.0"/>
+<text class="badge-t" x="299.0" y="818.0" text-anchor="middle" dominant-baseline="central">6</text>
+<text class="cat-t" x="320" y="818.0" dominant-baseline="central">Digital Health and Information Technology</text>
+<text class="cnt" x="668" y="818.0" text-anchor="end" dominant-baseline="central">3</text>
+<circle class="dot" cx="736" cy="793" r="3.6"/>
+<text class="code" x="747" y="793" dominant-baseline="central">6.1</text>
+<text class="dim" x="777" y="793" dominant-baseline="central">Digital Health Technology</text>
+<circle class="dot" cx="736" cy="818" r="3.6"/>
+<text class="code" x="747" y="818" dominant-baseline="central">6.2</text>
+<text class="dim" x="777" y="818" dominant-baseline="central">IoT and Sensor-based Monitoring</text>
+<circle class="dot" cx="736" cy="843" r="3.6"/>
+<text class="code" x="747" y="843" dominant-baseline="central">6.3</text>
+<text class="dim" x="777" y="843" dominant-baseline="central">Data Security, Privacy and Integrity</text>
+</g>
+<g class="grp k7">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 911.0 276.0 911.0"/>
+<path class="lk2" d="M680.0 911.0C706.0 911.0 706.0 886.0 732.0 886.0"/>
+<path class="lk2" d="M680.0 911.0C706.0 911.0 706.0 911.0 732.0 911.0"/>
+<path class="lk2" d="M680.0 911.0C706.0 911.0 706.0 936.0 732.0 936.0"/>
+<rect class="cat" x="276" y="895.0" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="911.0" r="11.0"/>
+<text class="badge-t" x="299.0" y="911.0" text-anchor="middle" dominant-baseline="central">7</text>
+<text class="cat-t" x="320" y="911.0" dominant-baseline="central">Governance, Policy, Ethics and Economics</text>
+<text class="cnt" x="668" y="911.0" text-anchor="end" dominant-baseline="central">3</text>
+<circle class="dot" cx="736" cy="886" r="3.6"/>
+<text class="code" x="747" y="886" dominant-baseline="central">7.1</text>
+<text class="dim" x="777" y="886" dominant-baseline="central">Governance, Coordination and Collaboration Networks</text>
+<circle class="dot" cx="736" cy="911" r="3.6"/>
+<text class="code" x="747" y="911" dominant-baseline="central">7.2</text>
+<text class="dim" x="777" y="911" dominant-baseline="central">Ethical, Legal and Regulatory Frameworks</text>
+<circle class="dot" cx="736" cy="936" r="3.6"/>
+<text class="code" x="747" y="936" dominant-baseline="central">7.3</text>
+<text class="dim" x="777" y="936" dominant-baseline="central">Cost and Economic Evaluation</text>
+</g>
+<g class="grp k8">
+<path class="lk" d="M216.0 503.5C246.0 503.5 246.0 979.0 276.0 979.0"/>
+<path class="lk2" d="M680.0 979.0C706.0 979.0 706.0 979.0 732.0 979.0"/>
+<rect class="cat" x="276" y="963.0" width="404" height="32" rx="8"/>
+<circle class="badge" cx="299.0" cy="979.0" r="11.0"/>
+<text class="badge-t" x="299.0" y="979.0" text-anchor="middle" dominant-baseline="central">8</text>
+<text class="cat-t" x="320" y="979.0" dominant-baseline="central">Application Context</text>
+<text class="cnt" x="668" y="979.0" text-anchor="end" dominant-baseline="central">1</text>
+<circle class="dot" cx="736" cy="979" r="3.6"/>
+<text class="code" x="747" y="979" dominant-baseline="central">8.1</text>
+<text class="dim" x="777" y="979" dominant-baseline="central">Application Domain</text>
+</g>
+<rect class="root" x="16" y="455.5" width="200" height="96" rx="12"/>
+<text class="root-t" x="116.0" y="481.5" text-anchor="middle" dominant-baseline="central">Blood Supply Chain</text>
+<text class="root-t" x="116.0" y="500.5" text-anchor="middle" dominant-baseline="central">Research Dimensions</text>
+<text class="root-s" x="116.0" y="525.5" text-anchor="middle" dominant-baseline="central">8 categories · 34 dimensions</text>
+</svg>
+    </div>
+    <figcaption>Level 1 is the 8 categories, with the number of dimensions in each on the right. Level 2 is the 34 dimensions, coded category.dimension. Hover over a branch to isolate it.</figcaption>
+  </figure>
+  <section class="ref">
+    <h2>Sub-dimensions</h2>
+    <p>Level 3 of the taxonomy: what each dimension covers.</p>
+    <div class="grid">
+<section class="card k1"><h3><span class="b">1</span>Research Design and Analytical Methods</h3><ul><li><span class="code">1.1</span><div><h4>Scientometric Mapping</h4><p>Bibliometric and co-citation mapping; Keyword co-occurrence and thematic clustering; Publication trend and research-gap analysis</p></div></li><li><span class="code">1.2</span><div><h4>Qualitative Content Analysis</h4><p>Literature, narrative and rapid reviews; Semi-structured interviews and focus groups; Thematic coding and saturation; Topic and theme extraction from text (news, social media); Experience reports, commentaries and best-practice synthesis; Comparative analysis of existing systems and frameworks</p></div></li><li><span class="code">1.3</span><div><h4>Qualitative Framework</h4><p>Conceptual and assessment frameworks (multi-domain service assessment); Supply / processing / distribution management domains; Phased national blood shortage plans (Green, Amber, Red, Recovery); Emergency rationing frameworks; Comparative compatibility and distribution frameworks</p></div></li><li><span class="code">1.4</span><div><h4>Statistical and Epidemiological Data Analysis</h4><p>Cross-sectional surveys; Retrospective registry and annual-report analysis; Before–after (pre/post) intervention comparisons; Descriptive statistics (frequencies, means, medians, CI); Hypothesis testing (chi-square, ANOVA, Kruskal–Wallis, Wilcoxon, regression); Prevalence, rate and trend analysis</p></div></li><li><span class="code">1.5</span><div><h4>Network Analysis Approaches</h4><p>Graph-based analysis of actors and links; Collaboration and co-authorship networks; Centrality and connectivity measures</p></div></li><li><span class="code">1.6</span><div><h4>Geospatial Analysis and GIS</h4><p>GIS mapping and geocoding; Buffer, proximity and select-by-location analysis; Choropleth and census-joined maps; Geographic access and blood deserts; Location-allocation analysis</p></div></li></ul></section><section class="card k2"><h3><span class="b">2</span>Optimization, Modelling and Intelligent Techniques</h3><ul><li><span class="code">2.1</span><div><h4>Optimization Approaches</h4><p>Mathematical programming (LP, MILP, MINLP); Multi-objective optimization (Pareto solutions); Robust and possibilistic programming; Predict-then-optimize pipelines; Algorithm-driven redistribution and process optimization</p></div></li><li><span class="code">2.2</span><div><h4>Quantitative Optimization</h4><p>Objective functions (cost, time, shortage, wastage, unmet demand); Solution methods (exact solvers, weighted Tchebycheff, piecewise linear approximation); Routing heuristics (Clarke–Wright savings, 2-opt); Inventory formulas (safety stock, critical and maximum levels); Performance and accuracy metrics (MAE, RMSE, MAPE, R², accuracy)</p></div></li><li><span class="code">2.3</span><div><h4>Hybrid Optimization Algorithms / Metaheuristics</h4><p>Simulated annealing; Nature-inspired metaheuristics; Integration of mathematical programming with heuristics; Metaheuristic tuning of machine-learning models</p></div></li><li><span class="code">2.4</span><div><h4>Simulation and Modeling Approaches</h4><p>Time-series models (ARIMA, ETS, SARIMA, Prophet, hierarchical time series); Predictive and regression models; Deterministic systems-flow and analytic models; Scenario simulation; Population-specific distribution modeling</p></div></li><li><span class="code">2.5</span><div><h4>Uncertainty Quantification</h4><p>Robust and possibilistic uncertainty modelling; Sensitivity analysis; Prediction intervals; External, out-of-sample and cross-validation; Rolling-origin backtesting and model generalizability</p></div></li><li><span class="code">2.6</span><div><h4>Machine Learning and Artificial Intelligence Techniques</h4><p>Neural networks (backpropagation, Kohonen SOM, LSTM); Ensemble and tree-based learners (Random Forest, XGBoost); Classical classifiers (SVM, KNN, decision trees); Deep learning and hybrid ensembles; Topic modelling; Feature engineering, feature selection and explainability</p></div></li><li><span class="code">2.7</span><div><h4>Decision Support Approaches</h4><p>Decision support tools and dashboards; Prediction-based decision support; Clinical and prehospital transfusion decision support; Location, selection and routing decisions; Expert and committee consensus decision making; Reports and analytics for managers and policymakers</p></div></li></ul></section><section class="card k3"><h3><span class="b">3</span>Blood Supply Chain Planning and Operations</h3><ul><li><span class="code">3.1</span><div><h4>Blood Supply Chain Network Design</h4><p>Multi-echelon network configuration; Closed-loop and reverse logistics; Facility flows across collection, processing, storage, distribution and disposal</p></div></li><li><span class="code">3.2</span><div><h4>Blood Bank Location and Selection Optimization</h4><p>Local blood bank and hospital selection; Permanent and temporary collection centre siting; Mobile blood drive site selection</p></div></li><li><span class="code">3.3</span><div><h4>Blood Supply and Demand Forecasting</h4><p>Demand forecasting (by blood group, product, department, region); Donation and supply forecasting; Blood loss and patient requirement estimation; Utilisation and workload trends; Seasonal, holiday and event-driven patterns</p></div></li><li><span class="code">3.4</span><div><h4>Donor Management, Recruitment and Retention</h4><p>Donor registration and eligibility; Donor demographics and behaviour; Recruitment campaigns and community engagement; Donor retention and reminders; Donor safety; Mobile and fixed donation sites; Rare and special donor panels</p></div></li><li><span class="code">3.5</span><div><h4>Inventory Management and Optimization</h4><p>Stock level policies (safety, critical, maximum stock); Centralised and pooled inventory; Real-time inventory tracking and reporting; Issuing policies (FIFO, days on hand); Inventory planning by blood group and product</p></div></li><li><span class="code">3.6</span><div><h4>Vehicle Routing and Distribution Optimization</h4><p>Vehicle routing and route improvement; Inter-hospital redistribution and transshipment; Transport modes (ground, ambulance, helicopter); Delivery time and cold-chain transport</p></div></li><li><span class="code">3.7</span><div><h4>Blood Allocation and Compatibility Frameworks</h4><p>ABO/RhD compatibility and identical-group prioritisation; Antigen-negative and rare blood matching; Allocation across hospitals and departments; Rationing and prioritisation during shortage</p></div></li><li><span class="code">3.8</span><div><h4>Blood Wastage and Shelf-life Management</h4><p>Expiry and outdate wastage; Discard rates; Near-expiry tracking and recirculation; Shelf-life and storage age of components</p></div></li></ul></section><section class="card k4"><h3><span class="b">4</span>Blood Products, Safety and Quality</h3><ul><li><span class="code">4.1</span><div><h4>Blood Products and Transfusion Strategies</h4><p>Whole blood and low-titre group O whole blood; Plasma types (fresh frozen, liquid, lyophilised, convalescent); Platelets (including cold-stored); Special red cell products (leucoreduced, washed, irradiated, frozen, antigen-negative, paediatric splits); Prehospital transfusion; Apheresis therapies and exchange transfusion</p></div></li><li><span class="code">4.2</span><div><h4>Transfusion-Transmissible Infections and Blood Safety Screening</h4><p>HIV, HBV, HCV and syphilis; Emerging and vector-borne infections; NAT and ELISA screening; TTI prevalence and trends</p></div></li><li><span class="code">4.3</span><div><h4>Quality Assurance and Performance Evaluation</h4><p>Quality indicators and performance scoring; External and internal quality assurance; Proficiency testing; SOP compliance and haemovigilance; Staff training and competency; Operational efficiency metrics</p></div></li></ul></section><section class="card k5"><h3><span class="b">5</span>Risk, Resilience and Emergency Management</h3><ul><li><span class="code">5.1</span><div><h4>Risk Category</h4><p>Supply risks (shortage, donor decline, scarce blood groups); Demand risks (demand surges, demand uncertainty); Operational risks (wastage, manual records, delays, human error); Clinical risks (haemorrhage, incompatibility, alloimmunisation, infection); External risks (disasters, armed conflict, pandemics); Information risks (data breaches, unauthorised access)</p></div></li><li><span class="code">5.2</span><div><h4>Risk Management Approach</h4><p>Mitigation and contingency strategies; Inventory thresholds, alerts and redistribution; Restrictive transfusion and patient blood management; Backup systems and business continuity; Training, education and process standardisation</p></div></li><li><span class="code">5.3</span><div><h4>Emergency Preparedness and Crisis Response</h4><p>Armed conflicts; Man-made and natural disasters; Pandemics; Emergency plans and drills; Business continuity; Mass-casualty response</p></div></li></ul></section><section class="card k6"><h3><span class="b">6</span>Digital Health and Information Technology</h3><ul><li><span class="code">6.1</span><div><h4>Digital Health Technology</h4><p>Alert and notification systems; Disaster management and emergency healthcare applications; Blood donation and health monitoring mobile applications; Web-based blood bank management systems; Cloud platforms; Hospital and transfusion information system integration; GPS-based donor and blood bank locators; Electronic consent and e-signatures</p></div></li><li><span class="code">6.2</span><div><h4>IoT and Sensor-based Monitoring</h4><p>Sensor nodes and microcontrollers; Cold-chain temperature and humidity monitoring; Real-time stock sensing; Beacon-based donor finding</p></div></li><li><span class="code">6.3</span><div><h4>Data Security, Privacy and Integrity</h4><p>Authentication; Role-based access control; Encryption; Auditing and integrity verification; Regulatory data-protection compliance</p></div></li></ul></section><section class="card k7"><h3><span class="b">7</span>Governance, Policy, Ethics and Economics</h3><ul><li><span class="code">7.1</span><div><h4>Governance, Coordination and Collaboration Networks</h4><p>National and international coordination bodies; Inter-organisational collaboration; Command and coordination centres; Policy and strategic planning</p></div></li><li><span class="code">7.2</span><div><h4>Ethical, Legal and Regulatory Frameworks</h4><p>Regulations and standards; Donor deferral rules; Informed consent; Fair allocation and prioritisation ethics; Clinical trial and regulatory compliance</p></div></li><li><span class="code">7.3</span><div><h4>Cost and Economic Evaluation</h4><p>Total cost minimisation; Cost savings; Labour cost; Product and programme cost estimation; Economic feasibility</p></div></li></ul></section><section class="card k8"><h3><span class="b">8</span>Application Context</h3><ul><li><span class="code">8.1</span><div><h4>Application Domain</h4><p>Transfusion haematology; Emergency, prehospital and trauma care; Military and conflict settings; Disaster and humanitarian relief; Hospital and intra-hospital blood management; National and regional blood services; Low- and middle-income country settings; Clinical trials</p></div></li></ul></section>
+    </div>
+  </section>
+</main>
+
+</body></html>
